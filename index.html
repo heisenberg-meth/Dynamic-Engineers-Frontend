@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="icon" href="./img/indexpage/logo.jpg" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/slick.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -24,11 +26,13 @@
       <div
         class="d-flex vh-15 justify-content-between align-items-center w-100 px-4"
       >
-        <img
-          class="img img-fluid w-8 logo"
-          src="./img/indexpage/logo.jpg"
-          alt="Logo"
-        />
+        <a href="./index.html">
+          <img
+            class="img img-fluid w-8 logo"
+            src="./img/indexpage/logo.jpg"
+            alt="Logo"
+          />
+        </a>
         <div
           class="xbtn text-dark icon d-lg-none d-md-inline-block btn toggler"
           onclick="myFunction(this)"
@@ -43,7 +47,7 @@
           <li>
             <a
               href="./index.html"
-              class="text-decoration-none text-md-center text-dark navlink"
+              class="text-decoration-none text-md-center text-dark navlink active"
               >Home</a
             >
           </li>
@@ -56,7 +60,7 @@
           </li>
           <li>
             <a
-              href="#quality"
+              href="./qualitypolicy.html"
               class="text-decoration-none text-md-center text-dark navlink"
               >Quality</a
             >
@@ -64,13 +68,13 @@
           <li>
             <a
               href="./servicepage.html"
-              class="text-decoration-none text-md-center text-dark active navlink"
+              class="text-decoration-none text-md-center text-dark navlink"
               >Our Services</a
             >
           </li>
           <li>
             <a
-              href="#inhouselab"
+              href="./lab.html"
               class="text-decoration-none text-md-center text-dark navlink"
               >In house Lab</a
             >
@@ -84,20 +88,20 @@
           </li>
           <li>
             <a
-              href="#contact"
+              href="./contact.html"
               class="text-decoration-none text-md-center text-dark navlink"
               >Contact</a
             >
           </li>
           <li>
-            <img class="iso" src="./img/indexpage/iso.png" alt="ISO" />
+            <img src="./img/indexpage/iso.png" alt="ISO" />
           </li>
         </ul>
       </div>
     </nav>
-    <div class="mainsection">
+    <main class="mainsection">
       <section class="container-fluid">
-        <section class="row heroSection vh-100 bgcontent rounded-3 zn-1">
+        <div class="row heroSection vh-100 bgcontent rounded-3 zn-1">
           <div
             class="col-lg-7 col-md-8 col-9 d-flex justify-content-center align-items-end px-5 py-3"
           >
@@ -106,7 +110,7 @@
               vulputate praesent lectus consectetur faucibus amet.
             </p>
           </div>
-        </section>
+        </div>
       </section>
       <section class="container-fluid">
         <div class="row">
@@ -115,31 +119,56 @@
           >
             <div class="col-5">
               <p class="mb-0 w-75 instrumentsans">
-                Hajster is an Ukrainian manufacturer of heat pumps, that has
-                been offering not only product quality but also customer peace
-                of mind.
+                The firm was established in 1989 in Ambattur as a small scale
+                industry Expanded operations to Maraimalai Nagar with steady
+                growth over the years Specializes in delivering high quality
+                surface coatings
               </p>
               <button
                 class="btn rounded-pill px-3 py-2 aboutBtn mt-3 text-white gentiumbookplus"
               >
-                About Our Company
+                <a
+                  href="./aboutpage.html"
+                  class="text-decoration-none text-white"
+                  >About Our Company</a
+                >
               </button>
             </div>
             <div class="col-7 instrumentsans">
-              <div class="col-lg-11 bg-body-secondary py-2">
-                <p class="mb-0 px-3">Salt Spray Test</p>
+              <div class="col-lg-11 bg-body-secondary py-2 w-100">
+                <p class="mb-0 px-3">
+                  <a href="#" class="text-decoration-none text-dark"
+                    >Salt Spray Test</a
+                  >
+                </p>
               </div>
-              <div class="col-lg-11 bg-body-secondary py-2 mt-2">
-                <p class="mb-0 px-3">Salt Spray Test</p>
+              <div class="col-lg-11 bg-body-secondary py-2 mt-2 w-100">
+                <p class="mb-0 px-3">
+                  <a href="#" class="text-decoration-none text-dark"
+                    >Salt Spray Test</a
+                  >
+                </p>
               </div>
-              <div class="col-lg-11 mt-2 bg-body-secondary py-2">
-                <p class="mb-0 px-3">Salt Spray Test</p>
+              <div class="col-lg-11 mt-2 bg-body-secondary py-2 w-100">
+                <p class="mb-0 px-3">
+                  <a href="#" class="text-decoration-none text-dark"
+                    >Salt Spray Test</a
+                  >
+                </p>
               </div>
-              <div class="col-lg-11 mt-2 bg-body-secondary py-2">
-                <p class="mb-0 px-3">Salt Spray Test</p>
+              <div class="col-lg-11 mt-2 bg-body-secondary py-2 w-100">
+                <p class="mb-0 px-3">
+                  <a href="#" class="text-decoration-none text-dark"
+                    >Salt Spray Test</a
+                  >
+                </p>
               </div>
-              <div class="col-lg-11 mt-2 bg-body-secondary py-2">
-                <p class="mb-0 px-3">Salt Spray Test</p>
+              <div class="col-lg-11 mt-2 bg-body-secondary py-2 w-100">
+                <p class="mb-0 px-3">
+                  <a href="#" class="text-decoration-none text-dark"
+                    >Salt Spray Test</a
+                  >
+                </p>
               </div>
             </div>
           </div>
@@ -153,65 +182,77 @@
             >
               <h2 class="text-uppercase instrumentsans">our services</h2>
               <button
-                class="btn rounded-pill text-uppercase aboutBtn text-white px-3 py-2 gentiumbookplus"
+                class="btn rounded-pill text-uppercase aboutBtn text-white px-5 py-2 gentiumbookplus"
               >
                 View All
               </button>
             </div>
             <div
-              class="d-flex justify-content-lg-between align-items-center gap-3 flex-lg-nowrap flex-md-nowrap flex-wrap py-3 my-lg-5 mx-lg-auto w-md-100 mx-md-auto"
+              class="d-flex justify-content-lg-between align-items-center flex-lg-nowrap flex-md-nowrap flex-wrap py-3 my-lg-5 mx-lg-auto mx-md-auto"
             >
               <div class="col-lg-4 col-md-4 col-11 mx-auto">
                 <div
-                  class="col-lg-10 col-md-11 mx-lg-auto mx-md-auto services vh-75 bgcontent rounded-3 text-white d-flex flex-column justify-content-end p-4"
+                  class="col-lg-11 col-md-11 mx-lg-auto mx-md-auto services vh-75 bgcontent rounded-3 text-white d-flex flex-column justify-content-end p-4"
                 >
                   <p class="mb-0 inter">Air-water heat pumps</p>
                   <h1 class="text-start instrumentsans fw-semibold">
                     Nickel Plating
                   </h1>
                 </div>
-                <div class="col-lg-10 col-md-10 col-12 mx-auto mx-5 mt-3">
+                <div class="col-lg-11 col-md-10 col-12 mx-auto mx-5 mt-3">
                   <button
                     class="col-12 d-flex justify-content-between rounded-pill moredetailbtn bg-white"
                   >
                     <p class="mb-0">More Details</p>
-                    <img src="./img/indexpage/arrows.png" class="img-fluid" alt="" />
+                    <img
+                      src="./img/indexpage/arrows.png"
+                      class="img-fluid"
+                      alt=""
+                    />
                   </button>
                 </div>
               </div>
               <div class="col-lg-4 col-md-4 col-11 mx-auto">
                 <div
-                  class="col-lg-10 col-md-11 mx-lg-auto mx-md-auto services1 vh-75 bgcontent rounded-3 text-white d-flex flex-column justify-content-end p-4"
+                  class="col-lg-11 col-md-11 mx-lg-auto mx-md-auto services1 vh-75 bgcontent rounded-3 text-white d-flex flex-column justify-content-end p-4"
                 >
                   <p class="mb-0 inter">Air-water heat pumps</p>
                   <h1 class="text-start instrumentsans fw-semibold">
                     Tin Plating
                   </h1>
                 </div>
-                <div class="col-lg-10 col-md-10 col-12 mx-auto mx-5 mt-3">
+                <div class="col-lg-11 col-md-10 col-12 mx-auto mx-5 mt-3">
                   <button
                     class="col-12 d-flex justify-content-between rounded-pill moredetailbtn bg-white"
                   >
                     <p class="mb-0">More Details</p>
-                    <img src="./img/indexpage/arrows.png" class="img-fluid" alt="" />
+                    <img
+                      src="./img/indexpage/arrows.png"
+                      class="img-fluid"
+                      alt=""
+                    />
                   </button>
                 </div>
               </div>
               <div class="col-lg-4 col-md-4 col-11 mx-auto">
                 <div
-                  class="col-lg-10 col-md-11 mx-lg-auto mx-md-auto services2 vh-75 bgcontent rounded-3 text-white d-flex flex-column justify-content-end p-4"
+                  class="col-lg-11 col-md-11 mx-auto services2 vh-75 bgcontent rounded-3 text-white d-flex flex-column justify-content-end p-4"
                 >
                   <p class="mb-0 inter">Geothermal heat pumps</p>
                   <h1 class="text-start instrumentsans fw-semibold">
                     Zinc Plating
                   </h1>
                 </div>
-                <div class="col-lg-10 col-md-10 col-12 mx-auto mx-5 mt-3">
+                <div class="col-lg-11 col-md-10 col-12 mx-auto mx-5 mt-3">
                   <button
                     class="col-12 d-flex justify-content-between rounded-pill moredetailbtn bg-white"
                   >
                     <p class="mb-0">More Details</p>
-                    <img src="./img/indexpage/arrows.png" class="img-fluid" alt="" />
+                    <img
+                      src="./img/indexpage/arrows.png"
+                      class="img-fluid"
+                      alt=""
+                    />
                   </button>
                 </div>
               </div>
@@ -220,46 +261,83 @@
         </div>
       </section>
       <section class="container-fluid bg-body-secondary">
-        <div class="col-10 mx-auto my-lg-5">
-          <div
-            class="d-flex justify-content-lg-between align-items-lg-start mx-lg-auto my-lg-5 my-md-5 mt-4"
-          >
-            <p
-              class="instrumentsans text-uppercase fs-5 col-lg-3 col-md-4 col-4 mt-lg-5 mt-md-5"
+        <div class="row mx-auto">
+          <div class="col-lg-10 mx-auto">
+            <div
+              class="d-flex justify-content-lg-between align-items-lg-start mx-lg-auto my-lg-5 my-md-5 mt-4"
             >
-              featured projects
-            </p>
-            <h1
-              class="instrumentsans mt-2 col-lg-8 col-md-8 col-10 text-start dreamProject mt-lg-5 mt-md-5"
+              <p
+                class="instrumentsans text-uppercase fs-5 col-lg-3 col-md-4 col-4 mt-lg-5 mt-md-5"
+              >
+                featured projects
+              </p>
+              <h1
+                class="instrumentsans mt-2 col-lg-8 col-md-8 col-10 text-start dreamProject mt-lg-5 mt-md-5"
+              >
+                For a dream Project, future or existing
+              </h1>
+            </div>
+            <div
+              class="d-flex mx-auto justify-content-lg-between my-5 flex-lg-row flex-column"
             >
-              For a dream Project, future or existing
-            </h1>
-          </div>
-          <div
-            class="d-flex mx-lg-auto justify-content-lg-between gap-3 my-5 flex-lg-nowrap flex-wrap"
-          >
-            <img
-              src="./img/indexpage/featureProjectsimg1.png"
-              alt=""
-              class="img img-fluid rounded-3 col-lg-6"
-            />
-            <img
-              src="./img/indexpage/featureProjectsimg2.png"
-              alt=""
-              class="img img-fluid rounded-3 col-lg-6"
-            />
+              <div class="col-lg-6 mx-auto">
+                <img
+                  src="./img/indexpage/featureProjectsimg1.png"
+                  alt=""
+                  class="img img-fluid d-block rounded-3 col-lg-11 mx-auto"
+                />
+              </div>
+              <div class="col-lg-6 mx-auto">
+                <img
+                  src="./img/indexpage/featureProjectsimg2.png"
+                  alt=""
+                  class="img img-fluid d-block rounded-3 col-lg-11 mx-auto"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
-      <section
-        class="container-fluid col-10 mx-lg-auto mx-md-auto my-lg-5 my-md-5"
-      >
+      <section class="container-fluid col-10 mx-lg-auto mx-md-auto py-5">
         <div class="row mx-lg-auto">
           <h3 class="text-uppercase instrumentsans">our projects</h3>
           <div
             class="d-flex justify-content-lg-between align-items-center mx-lg-auto p-4 gap-2"
           >
-            <div class="col-6 d-flex justify-content-between flex-column gap-2">
+            <div class="parent">
+              <div class="div1">
+                <div class="">
+                  <img
+                    class="bgcontent img-fluid"
+                    src="./img/indexpage/ourProjetImg1.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="div3">
+                <img
+                  src="./img/indexpage/ourProjectImg2.png"
+                  alt=""
+                  class="img-fluid bgcontent vh-25"
+                />
+              </div>
+              <div class="div4 h-auto">
+                <img
+                  src="./img/indexpage/ourProjetImg3.png"
+                  alt=""
+                  class="img-fluid bgconten h-100"
+                />
+              </div>
+              <div class="div5">
+                <img
+                  src="./img/indexpage/ourProjectImg4.png"
+                  class="img-fluid bgcontent h-100 w-100"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <!-- <div class="col-6 d-flex justify-content-between flex-column gap-2">
               <div
                 class="ourProjects rounded-3 vh-35 bgcontent d-flex justify-content-lg-center align-items-center"
               >
@@ -268,10 +346,16 @@
                 </h2>
               </div>
               <div class="d-flex col-lg-12">
-                <div class="ourProjects1 rounded-3 vh-35 bgcontent col-6"></div>
-                <div
-                  class="ourProjects2 rounded-3 vh-35 bgcontent mx-1 col-6"
-                ></div>
+                <div class="col-lg-6">
+                  <div
+                    class="ourProjects1 rounded-3 vh-35 bgcontent col-lg-11 col-6"
+                  ></div>
+                </div>
+                <div class="col-lg-6 mx-3">
+                  <div
+                    class="ourProjects2 rounded-3 vh-35 bgcontent mx-1 col-11"
+                  ></div>
+                </div>
               </div>
             </div>
             <div class="col-lg-6">
@@ -286,15 +370,13 @@
                   The test can be used.
                 </p>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </section>
       <section class="container-fluid col-lg-12">
         <div class="row mx-lg-auto">
-          <div
-            class="col-10 d-flex justify-content-lg-between mx-auto my-5 p-4"
-          >
+          <div class="col-10 d-flex justify-content-lg-between mx-auto">
             <p class="instrumentsans text-uppercase col-lg-3 col-md-3">
               Testmonial
             </p>
@@ -308,90 +390,109 @@
           <div
             class="d-flex my-lg-5 gap-3 flex-lg-nowrap flex-md-nowrap flex-wrap justify-content-center mx-lg-auto mx-md-auto"
           >
-            <div class="col-lg-4 col-md-4 col-10">
-              <div class="col-lg-11 col-md-11 mx-lg-auto">
-                <div class="card bg-dark text-white border-0 rounded p-4">
-                  <div
-                    class="d-flex justify-content-between align-items-start gap-2"
-                  >
-                    <img
-                      class="img-fluid quote-icon col-1 mt-1"
-                      src="./img/indexpage/doublequotes.png"
-                      alt=""
-                    />
-                    <p class="col mb-4 inter">
-                      Fantastic customer service. I shifted from a traditional
-                      bank to Sable [and] Sable’s customer service helped me
-                      answer all the questions that I needed to switch.
-                    </p>
-                  </div>
-                  <div
-                    class="author d-flex justify-content-lg-start align-items-center gap-2"
-                  >
-                    <span
-                      class="line mx-4 py-1 px-1 w-8 d-inline bg-white rounded"
-                    ></span>
-                    <span class="fw-bold inter">K Oiwake</span>
-                  </div>
-                </div>
+            <div
+              class="testimonial-card rounded bg-dark text-white p-4 position-relative"
+            >
+              <div class="fs-1">❝</div>
+              <p class="testimonial-text lh-base">
+                Fantastic customer service. I shifted from a traditional bank to
+                Sable [and] Sable’s customer service helped me answer all the
+                questions that I needed to switch.
+              </p>
+              <div class="d-flex align-items-center mt-1">
+                <span class="author-line d-inline-block bg-white"></span>
+                <span class="fw-semibold fs-6">K Oiwake</span>
               </div>
             </div>
-            <div class="col-lg-4 col-md-4 h-auto col-md-4 col-10">
-              <div class="col-lg-11 col-md-11 mx-lg-auto">
-                <div class="card bg-dark text-white border-0 rounded p-4">
-                  <div
-                    class="d-flex justify-content-between align-items-start gap-2"
-                  >
-                    <img
-                      class="img-fluid quote-icon col-1 mt-1"
-                      src="./img/indexpage/doublequotes.png"
-                      alt=""
-                    />
-                    <p class="col mb-4 inter">
-                      Fantastic customer service. I shifted from a traditional
-                      bank to Sable [and] Sable’s customer service helped me
-                      answer all the questions that I needed to switch.
-                    </p>
-                  </div>
-                  <div
-                    class="author d-flex justify-content-lg-start align-items-center gap-2"
-                  >
-                    <span
-                      class="line mx-4 py-1 px-1 w-8 d-inline bg-white rounded"
-                    ></span>
-                    <span class="fw-bold inter">K Oiwake</span>
-                  </div>
-                </div>
+          </div>
+          <div
+            class="d-flex my-lg-5 gap-3 flex-lg-nowrap flex-md-nowrap flex-wrap justify-content-center mx-lg-auto mx-md-auto"
+          >
+            <div
+              class="testimonial-card rounded bg-dark text-white p-4 position-relative"
+            >
+              <div class="fs-1">❝</div>
+              <p class="testimonial-text lh-base">
+                DEPL’s deep technical knowledge ensures that even the most
+                challenging plating requirements are handled flawlessly. They
+                take the time to understand our needs and recommend the most
+                suitable coating solutions
+              </p>
+              <div class="d-flex align-items-center mt-1">
+                <span class="author-line d-inline-block bg-white"></span>
+                <span class="fw-semibold fs-6">- Anand</span>
               </div>
             </div>
-            <div class="col-lg-4 col-md-4 h-auto col-md-4 col-10">
-              <div class="col-lg-11 col-md-11 mx-lg-auto">
-                <div class="card bg-dark text-white border-0 rounded p-4">
-                  <div
-                    class="d-flex justify-content-between align-items-start gap-2"
-                  >
-                    <img
-                      class="img-fluid quote-icon col-1 mt-1"
-                      src="./img/indexpage/doublequotes.png"
-                      alt=""
-                    />
-                    <p class="col mb-4 inter">
-                      Fantastic customer service. I shifted from a traditional
-                      bank to Sable [and] Sable’s customer service helped me
-                      answer all the questions that I needed to switch.
-                    </p>
-                  </div>
-                  <div
-                    class="author d-flex justify-content-lg-start align-items-center gap-2"
-                  >
-                    <span
-                      class="line mx-4 py-1 px-1 w-8 d-inline bg-white rounded"
-                    ></span>
-                    <span class="fw-bold inter">K Oiwake</span>
-                  </div>
-                </div>
+          </div>
+          <div
+            class="d-flex my-lg-5 gap-3 flex-lg-nowrap flex-md-nowrap flex-wrap justify-content-center mx-lg-auto mx-md-auto"
+          >
+            <div
+              class="testimonial-card rounded bg-dark text-white p-4 position-relative"
+            >
+              <div class="fs-1">❝</div>
+              <p class="testimonial-text lh-base"></p>
+              <div class="d-flex align-items-center mt-1">
+                <span class="author-line d-inline-block bg-white"></span>
+                <span class="fw-semibold fs-6">- Subash</span>
               </div>
             </div>
+          </div>
+        </div>
+
+        <div class="test-1 me-3 d-flex gap-5">
+          <p class="quote">❞</p>
+          <div class="test-para gap-5">
+            <p>
+              Dynamic Electroplaters blend advanced technology with skilled
+              craftsmanship, producing results that are precise, consistent, and
+              reliable across every batch
+            </p>
+            <p>-Ramraj</p>
+          </div>
+        </div>
+        <div class="test-1 me-3 d-flex gap-5">
+          <p class="quote">❞</p>
+          <div class="test-para gap-5">
+            <p>
+              DEPL team’s expertise in electroplating chemistry and process
+              optimization means zero defects in our parts - saving us both
+              rework and costs
+            </p>
+            <p>-Rahul</p>
+          </div>
+        </div>
+        <div class="test-1 me-3 d-flex gap-5">
+          <p class="quote">❞</p>
+          <div class="test-para gap-5">
+            <p>
+              In a competitive market, finding a partner who delivers
+              exceptional quality and dependable service is rare. Dynamic
+              Electroplaters have proven themselves time and again
+            </p>
+            <p>-Vikash</p>
+          </div>
+        </div>
+        <div class="test-1 me-3 d-flex gap-5">
+          <p class="quote">❞</p>
+          <div class="test-para gap-5">
+            <p>
+              Every interaction with DEPL is professional, transparent, and
+              solution-driven. They anticipate potential process issues and
+              address them before they impact delivery
+            </p>
+            <p>-Shyam</p>
+          </div>
+        </div>
+        <div class="test-1 me-3 d-flex gap-5">
+          <p class="quote">❞</p>
+          <div class="test-para gap-5">
+            <p>
+              Dynamic Electroplaters have earned our trust through consistent
+              performance, honest communication, and an unwavering focus on
+              client satisfaction
+            </p>
+            <p>-Surendar</p>
           </div>
         </div>
       </section>
@@ -469,7 +570,7 @@
                 >
               </address>
             </div>
-            <div class="col-lg-2 col-6 mt-0 mt-md-4">
+            <div class="col-lg-2 col-6 mt-lg-0 mt-md-4">
               <ul class="col-10 mx-auto">
                 <h6>Quick Links</h6>
                 <li>
@@ -523,7 +624,7 @@
           <p class="mb-0">Privacy Policy</p>
         </div>
       </footer>
-    </div>
+    </main>
     <script src="./js/app.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
