@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="bg-white sticky-top w-100">
+      <div
+        class="d-flex vh-15 justify-content-between align-items-center w-100 px-4"
+      >
+        <img
+          class="img img-fluid w-8 logo"
+          src="./img/indexpage/logo.jpg"
+          alt="Logo"
+        />
+        <div
+          class="xbtn text-dark icon d-lg-none d-md-inline-block btn toggler"
+          onclick="myFunction(this)"
+        >
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        <ul
+          class="navmenu navlinks vh-md-100 flex-lg-row flex-column align-items-center gap-4 list-unstyled gentiumbookplus"
+        >
+          <li>
+            <a
+              href="./index.html"
+              class="text-decoration-none text-md-center text-dark navlink"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="./aboutpage.html"
+              class="text-decoration-none text-md-center text-dark navlink"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="#quality"
+              class="text-decoration-none text-md-center text-dark navlink"
+              >Quality</a
+            >
+          </li>
+          <li>
+            <a
+              href="./servicepage.html"
+              class="text-decoration-none text-md-center text-dark active navlink"
+              >Our Services</a
+            >
+          </li>
+          <li>
+            <a
+              href="#inhouselab"
+              class="text-decoration-none text-md-center text-dark navlink"
+              >In house Lab</a
+            >
+          </li>
+          <li>
+            <a
+              href="./gallery.html"
+              class="text-decoration-none text-md-center text-dark navlink"
+              >Gallery</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contact"
+              class="text-decoration-none text-md-center text-dark navlink"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <img class="iso" src="./img/indexpage/iso.png" alt="ISO" />
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="mainsection">
+      <section class="container-fluid">
+        <section class="row contacthero bgcontent rounded-3 zn-1">
+          <div
+            class="d-flex justify-content-center align-items-start px-5 py-5 mt-5 flex-lg-nowrap flex-wrap"
+          >
+            <div class="col-lg-4 col-11 mx-auto">
+              <div class="col-lg-11 mx-auto">
+                <h1 class="text-white text-uppercase geistmono">CONTACT</h1>
+                <p class="mb-5 text-white fs-6 instrumentsans loremtxt">
+                  Salt Spray chamber is designed to test the surface of
+                  different materials (As per ASTM B117) for resistance to
+                  corrosion. The unit is commonly used to test .
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-8 col-11 mx-auto">
+              <div class="col-lg-11 mx-auto">
+                <form
+                  class="row d-flex flex-column needs-validation bg-white rounded-5 mb-5"
+                  novalidate
+                >
+                  <div class="col-10 mx-auto mt-5">
+                    <p class="mb-2 px-3">Name</p>
+                    <input
+                      type="text"
+                      class="form-control px-3 py-3 rounded-pill"
+                      id="validationCustom01"
+                      placeholder="Enter your Name..."
+                      required
+                    />
+                    <div class="valid-feedback">Valid Name!</div>
+                    <div class="invalid-feedback">Please enter a Name.</div>
+                  </div>
+                  <div class="col-10 mx-auto">
+                    <p class="mb-2 px-3 mt-2">Mobile Number</p>
+                    <input
+                      type="number"
+                      class="form-control px-3 py-3 rounded-pill"
+                      id="validationCustom02"
+                      placeholder="Enter your Number..."
+                      required
+                    />
+                    <div class="valid-feedback">Valid Number!</div>
+                    <div class="invalid-feedback">
+                      Please enter a Mobile Number.
+                    </div>
+                  </div>
+                  <div class="col-10 mx-auto">
+                    <p class="mb-2 px-3 mt-2">Email</p>
+                    <input
+                      type="email"
+                      class="form-control px-3 py-3 rounded-pill"
+                      id="validationCustom02"
+                      placeholder="Enter your Email..."
+                      required
+                    />
+                    <div class="valid-feedback">Valid Mail!</div>
+                    <div class="invalid-feedback">Please enter a email.</div>
+                  </div>
+                  <div class="col-10 mx-auto mb-3">
+                    <p class="mb-2 px-3 mt-2">How can we help you?</p>
+                    <textarea
+                      class="form-control px-3 py-3 rounded-5"
+                      id="validationTextarea"
+                      placeholder="Enter your Message..."
+                      rows="4"
+                      required
+                    >
+                    </textarea>
+                    <div class="invalid-feedback">
+                      Please enter a message in the textarea.
+                    </div>
+                  </div>
+
+                  <div class="col-10 mx-auto">
+                    <button
+                      class="btn contactbtn rounded-pill mb-3 px-5 gentiumbookplus text-white w-100"
+                      type="submit"
+                    >
+                      Send
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <footer
+        class="container-fluid footer col-lg-12 bg-dark text-white mt-lg-0 mt-5"
+      >
+        <div class="row">
+          <div class="text-center mt-5 py-5">
+            <h2 class="geistmono">Tell us what are you Looking for?</h2>
+            <div
+              class="bg-white mt-3 px-4 py-2 d-inline-flex justify-content-lg-between gap-2 rounded col-lg-7 col-md-7 col-9"
+            >
+              <input
+                class="outline-none outline-white border-0 w-100"
+                placeholder="Kindly enter your requirement"
+                type="text"
+              />
+              <button class="btn btn-white btn-outline-dark rounded-pill">
+                Submit
+              </button>
+            </div>
+          </div>
+          <div
+            class="col-11 flex-lg-nowrap flex-wrap d-flex justify-content-between align-items-start mx-auto py-5"
+          >
+            <div class="col-lg-2 col-4">
+              <img
+                src="./img/indexpage/footerLogo.png"
+                alt=""
+                class="img img-fluid footerLogo col-6"
+              />
+            </div>
+            <div class="col-lg-2 col-4">
+              <h6>Contact Info</h6>
+              <address class="col-8">
+                Head Office <br />
+                C-58,Sidco Industrial Estate,Maraimalai Nagar,Chennai,Tamil Nadu
+                - 603209.
+              </address>
+            </div>
+            <div class="col-lg-2 col-4">
+              <h6>Branch Office</h6>
+              <address class="col-8">
+                No.259, Tiny Shed,Ambattur Industrial Estate,Chennai,Tamil Nadu
+                - 600058.
+              </address>
+            </div>
+            <div class="col-lg-2 col-6 mt-lg-0 mt-md-4">
+              <h6>Contact Details</h6>
+              <address class="col-8">
+                <a
+                  class="text-decoration-none text-white"
+                  href="mailto:dynamicmmn@rediffmail.com"
+                  >dynamicmmn@rediffmail.com</a
+                >
+                <a
+                  class="text-decoration-none text-white"
+                  href="tel:+918610101495"
+                  >+91 86101 01495</a
+                ><br />
+                <a
+                  class="text-decoration-none text-white"
+                  href="tel:+919841091114"
+                  >+91 98410 91114</a
+                ><br />
+                <a
+                  class="text-decoration-none text-white"
+                  href="tel:+919841631114"
+                  >+91 98416 31114</a
+                ><br />
+                <a
+                  class="text-decoration-none text-white"
+                  href="tel:+91 44 474 00120"
+                  >+91 44 474 00120</a
+                >
+              </address>
+            </div>
+            <div class="col-lg-2 col-6 mt-0 mt-md-4">
+              <ul class="col-10 mx-auto">
+                <h6>Quick Links</h6>
+                <li>
+                  <a href="" class="text-decoration-none text-white">Home</a>
+                </li>
+                <li>
+                  <a href="" class="text-decoration-none text-white">Profile</a>
+                </li>
+                <li>
+                  <a href="" class="text-decoration-none text-white">Quality</a>
+                </li>
+                <li>
+                  <a href="" class="text-decoration-none text-white"
+                    >Our Services</a
+                  >
+                </li>
+                <li>
+                  <a href="" class="text-decoration-none text-white"
+                    >In House Lab</a
+                  >
+                </li>
+                <li>
+                  <a href="" class="text-decoration-none text-white">Gallery</a>
+                </li>
+                <li>
+                  <a href="" class="text-decoration-none text-white"
+                    >Contact Us</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-11 mt-lg-0 mt-md-2 mx-auto">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.6753872581253!2d80.10300487454592!3d12.928573015821268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525fb04f9981d1%3A0xd538069bcd74be65!2sJOKAR%20Creations%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1759222539980!5m2!1sen!2sin"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                class="col-lg-10 col-12"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+        <div
+          class="d-flex justify-content-around align-items-center gap-3 py-3 col-lg-5 col-md-8 mx-auto"
+        >
+          <p class="mb-0">&copy; Copyright 2025. All Rights Reserved</p>
+          <p class="mb-0">|</p>
+          <p class="mb-0">Terms & Conditions</p>
+          <p class="mb-0">|</p>
+          <p class="mb-0">Privacy Policy</p>
+        </div>
+      </footer>
+    </div>
+    <script src="./js/app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

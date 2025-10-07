@@ -1,0 +1,411 @@
+@import url("https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+/****************************Fonts***************************/
+.gentiumbookplus {
+  font-family: "Gentium Book Plus", serif !important;
+}
+.geistmono {
+  font-family: "Geist Mono", monospace !important;
+}
+.instrumentsans {
+  font-family: "Instrument Sans", sans-serif !important;
+}
+.nunitosans {
+  font-family: "Nunito Sans", sans-serif !important;
+}
+.inter {
+  font-family: "Inter", sans-serif !important;
+}
+.poppins {
+  font-family: "Poppins", sans-serif !important;
+}
+.opensans {
+  font-family: "Open Sans", sans-serif !important;
+}
+/**********************************Width**************************************/
+.w-8 {
+  width: 8vw;
+}
+.w-40 {
+  width: 40vw;
+}
+/**********************************Height**********************************/
+.vh-15 {
+  height: 15vh !important;
+}
+.vh-34 {
+  height: 34vh !important;
+}
+.vh-35 {
+  height: 35vh !important;
+}
+.vh-40 {
+  height: 40vh !important;
+}
+.vh-45 {
+  height: 45vh !important;
+}
+.vh-60 {
+  height: 60vh !important;
+}
+.vh-71 {
+  height: 71vh !important;
+}
+.vh-75 {
+  height: 75vh !important;
+}
+.vh-80 {
+  height: 80vh !important;
+}
+/************************************************Colors******************************************************/
+.aboutBtn,
+.aboutpageBtn,
+.contactbtn {
+  background: linear-gradient(90deg, #74473b 0%, #a46e58 100%);
+}
+.navlinks a:hover {
+  color: #a46e58 !important;
+}
+.navlinks a:active {
+  border-bottom: 2px solid #a46e58;
+}
+.active {
+  border-bottom: 2px solid #a46e58;
+}
+/***************************************Background Images******************************************************/
+.bgcontent {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.heroSection {
+  background-image: url("../img/indexpage/backgroundImg.png");
+}
+.abouthero {
+  background-image: url("../img/aboutpage/bg.png");
+}
+.servicehero {
+  background-image: url("../img/services/bg.png");
+}
+.galleryhero {
+  background-image: url("../img/gallery/gallerybg.png");
+}
+.qualityhero {
+  background-image: url("../img/quality/bg.png");
+}
+.labhero {
+  background-image: url("../img/labs/bg.png");
+}
+.contacthero {
+  background-image: url("../img/contact/bg.png");
+}
+.services {
+  background-image: url("../img/indexpage/Nickel\ Plating.png");
+}
+.services1 {
+  background-image: url("../img/indexpage/Tin\ Plating.png");
+}
+.services2 {
+  background-image: url("../img/indexpage/Zinc\ Plating.png");
+}
+.ourProjects {
+  background-image: url("../img/indexpage/ourProjetImg1.png");
+}
+.ourProjects1 {
+  background-image: url("../img/indexpage/ourProjectImg2.png");
+}
+.ourProjects2 {
+  background-image: url("../img/indexpage/ourProjetImg3.png");
+}
+.ourProjects3 {
+  background-image: url("../img/indexpage/ourProjectImg4.png");
+}
+.safetyimg {
+  background-image: url("../img/quality/project/prj1.png");
+}
+.humanResources {
+  background-image: url("../img/quality/project/prj2.png");
+}
+.galleryimg {
+  object-fit: contain;
+  height: 75vh !important;
+}
+/**********************************************Font Size*******************************************************************/
+.loremtxt {
+  font-size: 2vw !important;
+  text-align: justify;
+}
+
+.inputbox {
+  outline: none;
+}
+.moredetailbtn {
+  border: 1px solid #000;
+  padding: 10px 20px;
+}
+.dreamProject {
+  padding-right: 8.5rem;
+}
+.mainsection {
+  overflow: hidden;
+}
+.navmenu,
+.navlinks {
+  display: flex !important;
+}
+.navlinks {
+  flex-direction: row;
+  transition: 0.4s ease-in-out;
+  overflow: hidden !important;
+}
+.xbtn {
+  display: inline-block;
+}
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+.qualitybtn {
+  bottom: 14vw !important;
+  left: 20vw !important;
+  position: relative !important;
+}
+.change .bar2 {
+  opacity: 0;
+}
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+.overlay-img {
+  position: absolute;
+  bottom: 23px !important;
+  left: 7px;
+  opacity: 0.9;
+}
+.img1 {
+  width: 100% !important;
+  bottom: 6px !important;
+  right: 30px !important;
+  left: 0px !important;
+}
+.img-3,
+.img2 {
+  width: 95% !important;
+}
+.projectbtn {
+  left: 15vw !important;
+  top: 5vw !important;
+  outline: 1px solid rgb(255, 255, 255) !important;
+}
+/***************************************************About Page******************************************************************/
+.aboutpageBtn {
+  border: 2px solid #fff;
+}
+.navlink {
+  position: relative;
+  transition: color 0.3s ease;
+}
+.navlink::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: #a46e58;
+  transition: width 0.3s ease;
+}
+.navlink:hover::after {
+  width: 100%;
+}
+.navlink.active::after {
+  animation: slide 0.3s ease forwards;
+}
+.galleryimg1 {
+  height: 100% !important;
+}
+.steelimg {
+  height: 64vh !important;
+}
+.steelimg1 {
+  margin-left: 4rem !important;
+}
+.scroll-container {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  padding: 0px 20px 100px;
+  box-sizing: border-box;
+  scrollbar-width: none !important;
+}
+.cardnumber {
+  font-size: 8.5vw !important;
+  line-height: 1;
+  letter-spacing: -0.05em;
+}
+.key {
+  letter-spacing: 0.5vw;
+  transition: transform 0.2s;
+}
+.card {
+  height: 500px;
+  margin: 20px 0;
+  background-color: #f0f0f0;
+  border-radius: 40px;
+  display: flex;
+  align-items: start;
+  justify-content: end;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 20px;
+  gap: 20px;
+}
+.lab-test-1 {
+  background-image: url("../img/labs/tests/test1.png");
+}
+.lab-test-2 {
+  background-image: url("../img/labs/tests/test2.png");
+}
+.lab-test-3 {
+  background-image: url("../img/labs/tests/test3.png");
+}
+.lab-test-4 {
+  background-image: url("../img/labs/tests/test4.png");
+}
+.lab-test-5 {
+  background-image: url("../img/labs/tests/test5.png");
+}
+
+.lab-test-1 h2,
+.lab-test-2 h2,
+.lab-test-3 h2,
+.lab-test-4 h2,
+.lab-test-5 h2 {
+  margin-top: 20px !important;
+  font-size: 2.604vw;
+  font-weight: 700;
+}
+.lab-test-1 p,
+.lab-test-2 p,
+.lab-test-3 p,
+.lab-test-4 p,
+.lab-test-5 p {
+  font-size: 14px;
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 400;
+  line-height: 25px;
+}
+.contactbtn {
+  font-size: 1.5vw !important;
+}
+
+@keyframes slide-underline {
+  0% {
+    width: 0;
+    left: 0;
+  }
+  100% {
+    width: 100%;
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .navlinks {
+    display: none !important;
+  }
+  .responsive {
+    display: flex !important;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    line-height: 2.5rem;
+  }
+  .icon {
+    font-size: 1.8rem;
+  }
+  .projectbtn {
+    left: 25vw !important;
+    top: 8vw !important;
+    outline: 1px solid rgb(255, 255, 255) !important;
+  }
+  .steelimg {
+    height: 34vw !important;
+  }
+  .steelimg2 {
+    height: 23vw !important;
+  }
+  .steelimg1 {
+    margin-left: 2vw !important;
+  }
+  .galleryimg {
+    height: 50vh !important;
+  }
+  .zincimg {
+    height: 31vh !important;
+  }
+  .galleryimgsteel {
+    height: 49vh !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .loremtxt {
+    font-size: 20px !important;
+  }
+  .logo {
+    width: 15vw !important;
+  }
+  .navlinks {
+    align-items: center !important;
+    transition: 0.5s ease-in-out;
+    float: right;
+    text-align: center !important;
+    line-height: 3.5rem;
+    top: 60px !important;
+    right: 0% !important;
+    left: 0% !important;
+    height: 100vh !important;
+    background: white;
+    width: 100% !important;
+    padding: 1rem !important;
+  }
+  .loremtxt {
+    font-size: 3.5vw !important;
+  }
+  .projectbtn {
+    left: 59vw !important;
+    top: 13vw !important;
+    outline: 1px solid rgb(255, 255, 255) !important;
+  }
+  .qualitybtn {
+    margin-top: 30px !important;
+    left: 0px !important;
+  }
+  .galleryimgsteel,
+  .galleryimg {
+    height: 33vh !important;
+  }
+  .zincimg {
+    height: 20vh !important;
+  }
+  .btmimg {
+    margin-top: 8px !important;
+  }
+  .labtext {
+    font-size: 1.5vw !important;
+    line-height: 140% !important;
+  }
+}

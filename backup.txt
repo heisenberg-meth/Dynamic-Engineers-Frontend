@@ -1,0 +1,75 @@
+<nav class="bg-white sticky-top w-100">
+      <div
+        class="d-flex vh-15 justify-content-between align-items-center w-100 px-4"
+      >
+        <img
+          class="img img-fluid w-8 vh-40 logo"
+          src="./img/indexpage/logo.jpg"
+          alt="Logo"
+        />
+        <div
+          class="xbtn text-dark icon d-lg-none d-md-inline-block btn toggler"
+          onclick="myFunction(this)"
+        >
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        <ul
+          class="navlinks overflow-hidden vh-15 vh-md-100 flex-lg-row flex-column align-items-center gap-4 list-unstyled mb-0 gentiumbookplus"
+        >
+          <li>
+            <a
+              href="./index.html"
+              class="text-decoration-none text-md-center text-dark active"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="./aboutpage.html"
+              class="text-decoration-none text-md-center text-dark"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="#quality"
+              class="text-decoration-none text-md-center text-dark"
+              >Quality</a
+            >
+          </li>
+          <li>
+            <a
+              href="./servicepage.html"
+              class="text-decoration-none text-md-center text-dark"
+              >Our Services</a
+            >
+          </li>
+          <li>
+            <a
+              href="#inhouselab"
+              class="text-decoration-none text-md-center text-dark"
+              >In house Lab</a
+            >
+          </li>
+          <li>
+            <a
+              href="#gallery"
+              class="text-decoration-none text-md-center text-dark"
+              >Gallery</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contact"
+              class="text-decoration-none text-md-center text-dark"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <img class="iso" src="./img/indexpage/iso.png" alt="ISO" />
+          </li>
+        </ul>
+      </div>
+    </nav>
