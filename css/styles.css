@@ -383,15 +383,15 @@
 .qualitybtn {
   padding: 10px 20px;
 }
-
 .service-hero {
-  background: #bd9787;
   background: linear-gradient(
     180deg,
     rgba(164, 110, 88, 0.72) 23.93%,
     rgba(101, 59, 51, 0.8) 112.24%
   );
 }
+/*
+
 .d-btns {
   background-color: rgba(239, 239, 239, 0.31);
   border: 2px solid white;
@@ -399,29 +399,83 @@
   justify-content: space-between;
   align-items: center;
   gap: 10px;
-  width: 95%;
+  width: 98%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scrollbar-width: thin;
 }
-.d-btns button {
-  border: none;
-  background-color: transparent;
-  font-size: 1vw;
-  padding: 25px 10px;
-  font-family: "Instrument Sans", sans-serif;
+.d-btns::-webkit-scrollbar {
+  height: 6px;
+}
+.d-btns::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 3px;
+} */
+#loading {
+  z-index: 10;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+}
+/* .d-btns button {
+  flex: 0 0 auto;
+  font-size: clamp(8px, 1vw, 18px);
+  background: transparent;
+  color: #fff;
+  transition: 0.3s;
 }
 .d-btns button.btn-active {
   background: #ffffff;
   border-radius: 10px;
   color: black;
-  -webkit-box-shadow: 0px 3px 9px 4px rgba(0, 0, 0, 0.78);
   box-shadow: 0px 3px 9px 4px rgba(0, 0, 0, 0.78);
-}
+} */
 .model {
-  width: 60% !important;
-  height: 70% !important;
+  width: 60%;
+  height: 70%;
 }
 model-viewer {
-  height: 100% !important;
-  width: 100% !important;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.5s ease;
+}
+.fade {
+  opacity: 0.3;
+}
+
+.toggle-btns {
+  display: flex;
+  border: 1px solid #ffffff;
+  border-radius: 2rem;
+  overflow: hidden;
+  width: 98%;
+}
+
+.toggle {
+  background: #cdb2a7;
+  flex: 1;
+  padding: 0.75rem 2rem;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  color: #444;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.toggle.active {
+  background: linear-gradient(
+    270deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(192, 151, 136, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  color: #222;
+}
+
+.toggle:not(.active):hover {
+  background: rgba(255, 255, 255, 0.15);
 }
 
 @keyframes slide-underline {

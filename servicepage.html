@@ -46,7 +46,7 @@
           <div class="bar3"></div>
         </div>
         <ul
-          class="navmenu navlinks vh-100 vh-md-100 flex-lg-row flex-column align-items-center gap-4 list-unstyled gentiumbookplus"
+          class="navmenu navlinks flex-lg-row flex-column align-items-center gap-4 list-unstyled gentiumbookplus"
         >
           <li>
             <a
@@ -108,22 +108,49 @@
         <div
           class="service-hero d-flex justify-content-center align-items-center flex-column gap-3 px-2 vh-100 rounded"
         >
-          <div class="d-btns btn-outline-danger rounded-4">
-            <button class="rounded">Lube Coating</button>
-            <button class="rounded">Manganese Phosphating</button>
-            <button class="rounded">Moly Coating</button>
-            <button class="rounded">Nickel Plating</button>
-            <button class="rounded">Powder Coating</button>
-            <button class="rounded">Silver Plating</button>
-            <button class="rounded">Tin Plating</button>
-            <button class="rounded">Zinc Flake Coating</button>
-            <button class="rounded">Zinc Phosphating</button>
-            <button class="rounded">Zinc Plating</button>
+          <div class="d-btns btn-outline-danger rounded-4 z-2 toggle-btns">
+            <button class="border-0 instrumentsans px-2 py-3 rounded toggle active">
+              Lube Coating
+            </button>
+            <button class="border-0 instrumentsans px-2 py-3 rounded-3 toggle">
+              Manganese Phosphating
+            </button>
+            <button class="border-0 instrumentsans px-2 py-3 toggle">
+              Moly Coating
+            </button>
+            <button class="border-0 instrumentsans px-2 py-3 toggle">
+              Nickel Plating
+            </button>
+            <button class="border-0 instrumentsans px-2 py-3 toggle">
+              Powder Coating
+            </button>
+            <button class="border-0 instrumentsans px-2 py-3 toggle">
+              Silver Plating
+            </button>
+            <button class="border-0 instrumentsans px-2 py-3 toggle">
+              Tin Plating
+            </button>
+            <button class="border-0 instrumentsans px-2 py-3 toggle">
+              Zinc Flake Coating
+            </button>
+            <button class="border-0 instrumentsans px-2 py-3 toggle">
+              Zinc Phosphating
+            </button>
+            <button class="border-0 instrumentsans px-2 py-3 toggle">
+              Zinc Plating
+            </button>
           </div>
-          <div class="model">
+
+          <div class="model position-relative">
+            <div
+              id="loading"
+              class="position-absolute top-50 start-50 translate-middle text-white fw-bold"
+            >
+              Loading...
+            </div>
             <model-viewer
               src="./modal/glb/Lube Coating.glb"
-              alt="A 3D model of a car"
+              alt="A 3D model"
               auto-rotate
               camera-controls
               disable-zoom

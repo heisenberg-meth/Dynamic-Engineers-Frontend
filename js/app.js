@@ -44,3 +44,12 @@ forms.forEach(function (form) {
     form.classList.add("was-validated");
   });
 });
+
+const toggles = document.querySelectorAll(".toggle");
+
+toggles.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    toggles.forEach((b) => b.classList.remove("active"));
+    btn.classList.add("active");
+  });
+});
