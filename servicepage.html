@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Dynamic Engineers</title>
+    <link rel="icon" href="./img/indexpage/logo.jpg" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
@@ -15,20 +16,27 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
   </head>
   <body>
     <nav class="bg-white sticky-top w-100">
       <div
         class="d-flex vh-15 justify-content-between align-items-center w-100 px-4"
       >
-        <img
-          class="img img-fluid w-8 vh-40 logo"
-          src="./img/indexpage/logo.jpg"
-          alt="Logo"
-        />
+        <a href="./index.html">
+          <img
+            class="img img-fluid w-8 logo"
+            src="./img/indexpage/logo.jpg"
+            alt="Logo"
+          />
+        </a>
         <div
           class="xbtn text-dark icon d-lg-none d-md-inline-block btn toggler"
           onclick="myFunction(this)"
@@ -38,7 +46,7 @@
           <div class="bar3"></div>
         </div>
         <ul
-          class="navmenu navlinks vh-15 vh-md-100 flex-lg-row flex-column align-items-center gap-4 list-unstyled gentiumbookplus"
+          class="navmenu navlinks vh-100 vh-md-100 flex-lg-row flex-column align-items-center gap-4 list-unstyled gentiumbookplus"
         >
           <li>
             <a
@@ -64,7 +72,7 @@
           <li>
             <a
               href="./servicepage.html"
-              class="text-decoration-none text-md-center text-dark active navlink"
+              class="text-decoration-none text-md-center text-dark navlink active"
               >Our Services</a
             >
           </li>
@@ -90,7 +98,7 @@
             >
           </li>
           <li>
-            <img class="iso" src="./img/indexpage/iso.png" alt="ISO" />
+            <img src="./img/indexpage/iso.png" alt="ISO" />
           </li>
         </ul>
       </div>
@@ -98,39 +106,29 @@
     <div class="mainsection">
       <section class="container-fluid col-lg-12 col-11">
         <div
-          class="row servicehero z-n1 vh-100 bgcontent rounded-3 zn-1 d-flex justify-content-between align-items-end"
+          class="service-hero d-flex justify-content-center align-items-center flex-column gap-3 px-2 vh-100 rounded"
         >
-          <div
-            class="col-lg-7 col-md-7 col-12 d-flex justify-content-center align-items-end px-5 py-3"
-          >
-            <p class="mb-5 text-white geistmono loremtxt col-12">
-              Lorem ipsum dolor sit amet consectetur. Tristique lectus egestas
-              vulputate praesent lectus consectetur faucibus amet.
-            </p>
+          <div class="d-btns  ">
+            <button>Lube Coating</button>
+            <button>Manganese Phosphating</button>
+            <button>Moly Coating</button>
+            <button>Nickel Plating</button>
+            <button>Powder Coating</button>
+            <button>Silver Plating</button>
+            <button>Tin Plating</button>
+            <button>Zinc Flake Coating</button>
+            <button>Zinc Phosphating</button>
+            <button>Zinc Plating</button>
           </div>
-          <div
-            class="col-lg-3 col-md-5 col-11 imgcontainer position-relative d-inline-block py-5 mb-5 mx-auto"
-          >
-            <button
-              class="btn projectbtn position-relative z-3 rounded-pill py-1"
-            >
-              Projects
-            </button>
-            <img
-              src="./img/services/bgoverlay/1.png"
-              alt=""
-              class="img-fluid rounded z-2 rounded overlay-img img1 mx-auto"
-            />
-            <img
-              src="./img/services/bgoverlay/2.png"
-              alt=""
-              class="img-fluid rounded z-1 rounded overlay-img img2 mx-auto"
-            />
-            <img
-              src="./img/services/bgoverlay/3.png"
-              alt=""
-              class="img-fluid rounded z-n1 rounded d-block mx-auto img-3"
-            />
+          <div class="model">
+            <model-viewer
+              src="./modal/glb/Lube Coating.glb"
+              alt="A 3D model of a car"
+              auto-rotate
+              camera-controls
+              disable-zoom
+              shadow-intensity="1"
+            ></model-viewer>
           </div>
         </div>
       </section>

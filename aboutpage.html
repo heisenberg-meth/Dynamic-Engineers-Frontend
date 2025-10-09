@@ -6,8 +6,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/styles.css" />
     <link
+      rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
     />
     <link
       rel="stylesheet"
@@ -15,20 +15,27 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
   </head>
   <body>
     <nav class="bg-white sticky-top w-100">
       <div
         class="d-flex vh-15 justify-content-between align-items-center w-100 px-4"
       >
-        <img
-          class="img img-fluid w-8 logo"
-          src="./img/indexpage/logo.jpg"
-          alt="Logo"
-        />
+        <a href="./index.html">
+          <img
+            class="img img-fluid w-8 logo"
+            src="./img/indexpage/logo.jpg"
+            alt="Logo"
+          />
+        </a>
         <div
           class="xbtn text-dark icon d-lg-none d-md-inline-block btn toggler"
           onclick="myFunction(this)"
@@ -90,12 +97,12 @@
             >
           </li>
           <li>
-            <img class="iso" src="./img/indexpage/iso.png" alt="ISO" />
+            <img src="./img/indexpage/iso.png" alt="ISO" />
           </li>
         </ul>
       </div>
     </nav>
-    <div class="mainsection">
+    <main class="mainsection">
       <section class="container-fluid bgcontent col-lg-12 col-md-11 col-11">
         <div class="row abouthero vh-100 bgcontent rounded-3 zn-1">
           <div
@@ -124,9 +131,9 @@
         </div>
       </section>
       <section class="aboutsection container fluid col-11 mx-auto">
-        <div class="row py-5">
+        <div class="row">
           <div class="d-flex justify-content-between mt-5">
-            <p class="mb-0 instrumentsans col-3">About</p>
+            <p class="mb-0 instrumentsans col-3 fs-5">About</p>
             <div class="geistmono col-9">
               <h1 class="col-lg-6 col-md-10 col-11">
                 What is So Special About Us
@@ -160,7 +167,7 @@
                 </p>
               </div>
             </div>
-            <div class="col-lg-6 col-md-6 col-11 py-5">
+            <div class="col-lg-6 col-md-6 col-11">
               <div class="col-lg-12 col-md-11">
                 <div class="d-flex justify-content-between col-12 mx-auto">
                   <img
@@ -181,7 +188,7 @@
           </div>
         </div>
       </section>
-      <section class="bg-dark">
+      <section class="container-fluid bg-dark">
         <div class="text-center mt-5 py-5">
           <h2 class="geistmono text-white">
             Tell us what are you Looking for?
@@ -204,7 +211,7 @@
       </section>
       <section class="container-fluid col-11">
         <div class="row py-3">
-          <p class="mb-0 flex-start px-5 instrumentsans">Vission & Mission</p>
+          <p class="mb-0 flex-start instrumentsans">Vission & Mission</p>
           <div
             class="d-flex mx-auto mt-5 flex-lg-nowrap flex-md-nowrap flex-wrap"
           >
@@ -236,14 +243,17 @@
           </div>
         </div>
       </section>
-      <section class="container-fluid col-11 py-5">
+      <section class="container-fluid col-lg-12 col-11 pt-5">
         <div class="row">
-          <div class="d-flex">
-            <div class="col-4">
+          <div
+            class="d-flex justify-content-between align-items-start col-11 mx-auto"
+          >
+            <div class="col-5">
               <p class="mb-0">Certificates</p>
+              <h1 class="mt-2">What is So Special About Us</h1>
             </div>
             <div class="col-8 mx-auto">
-              <p class="mb-0 col-lg-8 mx-auto">
+              <p class="mb-0 col-lg-9 mx-auto">
                 Lorem ipsum dolor sit amet consectetur. Scelerisque cursus
                 tortor elementum suspendisse urna posuere velit nunc Lorem ipsum
                 dolor sit amet consectetur. Scelerisque cursus tortor elementum
@@ -251,130 +261,212 @@
               </p>
             </div>
           </div>
-          <h1 class="mt-5">What is So Special About Us</h1>
           <div
-            class="col-lg-11 col-md-11 mx-auto d-flex justify-content-between align-items-center py-5 flex-lg-nowrap flex-wrap"
+            class="col-lg-10 col-11 mx-auto d-flex justify-content-between align-items-center py-5 flex-lg-nowrap flex-wrap"
           >
-            <div class="col-lg-4 col-md-11 mx-auto">
-              <img
-                src="./img/aboutpage/whysospecial/special1.png"
-                alt=""
-                class="img-fluid- img rounded col-lg-11 col-md-11 mx-auto"
-              />
-            </div>
-            <div class="col-lg-4 col-md-11 mx-auto py-5">
-              <img
-                src="./img/aboutpage/whysospecial/special2.png"
-                alt=""
-                class="img-fluid- img rounded col-lg-11 col-md-11 mx-auto"
-              />
-            </div>
-            <div class="col-lg-4 col-md-11 mx-auto">
-              <img
-                src="./img/aboutpage/whysospecial/special3.png"
-                alt=""
-                class="img-fluid- img rounded col-lg-11 col-md-11 mx-auto"
-              />
+            <div class="certificateparent col-10 mx-auto">
+              <div class="cdiv1 col-12 mx-auto">
+                <img
+                  src="./img/aboutpage/whysospecial/special1.png"
+                  alt=""
+                  class="img-fluid img rounded mx-auto h-100 d-block w-100"
+                />
+              </div>
+              <div class="cdiv2">
+                <img
+                  src="./img/aboutpage/whysospecial/special2.png"
+                  alt=""
+                  class="img-fluid img rounded w-100 h-100 mx-auto d-block"
+                />
+              </div>
+              <div class="cdiv3">
+                <img
+                  src="./img/aboutpage/whysospecial/special3.png"
+                  alt=""
+                  class="img-fluid img rounded w-100 h-100 mx-auto d-block"
+                />
+              </div>
+              <div class="cdiv4">
+                <img
+                  src="./img/aboutpage/whysospecial/special4.jpg"
+                  alt=""
+                  class="img-fluid img rounded w-100 mx-auto h-100 d-block"
+                />
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="container-fluid col-lg-12">
-        <div class="row mx-lg-auto">
-          <div
-            class="col-11 d-flex justify-content-lg-between mx-auto my-5 p-4"
-          >
-            <p class="instrumentsans text-uppercase col-3">Testmonial</p>
-            <p class="poppins col-lg-7">
-              Lorem ipsum dolor sit amet consectetur. Scelerisque cursus tortor
-              elementum suspendisse urna posuere velit nunc Lorem ipsum dolor
-              sit amet consectetur. Scelerisque cursus tortor elementum
-              suspendisse urna posuere velit nunc
+      <section class="container-fluid">
+        <div class="row mx-auto overflow-hidden">
+          <div class="col-10 d-flex justify-content-lg-between mx-auto">
+            <p class="instrumentsans text-uppercase col-lg-3 col-md-3">
+              Testmonial
             </p>
           </div>
-          <div
-            class="d-flex my-lg-5 gap-3 flex-lg-nowrap flex-md-nowrap flex-wrap justify-content-center mx-lg-auto mx-md-auto"
-          >
-            <div class="col-lg-4 col-md-4 col-10">
-              <div class="col-lg-11 col-md-11 mx-lg-auto">
-                <div class="card bg-dark text-white border-0 rounded p-4">
+          <div class="mx-auto mx-md-auto col-11">
+            <div class="autoplay d-flex vh-60 justify-content-between">
+              <div class="col-4">
+                <div
+                  class="testimonial-card rounded bg-dark text-white col-11 mx-auto p-4 h-100"
+                >
                   <div
-                    class="d-flex justify-content-between align-items-start gap-2"
+                    class="d-flex justify-content-between align-items-start gap-3"
                   >
-                    <img
-                      class="img-fluid quote-icon col-1 mt-1"
-                      src="./img/doublequotes.png"
-                      alt=""
-                    />
-                    <p class="col mb-4 inter">
-                      Fantastic customer service. I shifted from a traditional
-                      bank to Sable [and] Sable’s customer service helped me
-                      answer all the questions that I needed to switch.
+                    <p class="fs-1 mt-2">❝</p>
+                    <p class="testimonial-text lh-base">
+                      Dynamic Electroplaters have been our go-to choice for
+                      years because of their unwavering commitment to quality.
+                      Every component they plate exceeds our expectations in
+                      finish, durability, and appearance
                     </p>
                   </div>
-                  <div
-                    class="author d-flex justify-content-lg-start align-items-center gap-2"
-                  >
-                    <span
-                      class="line mx-4 py-1 px-1 w-8 d-inline bg-white rounded"
-                    ></span>
-                    <span class="fw-bold inter">K Oiwake</span>
+                  <div class="d-flex align-items-center mt-1">
+                    <span class="author-line d-inline-block bg-white"></span>
+                    <span class="fw-normal fs-6">Ramesh</span>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="col-lg-4 col-md-4 h-auto col-md-4 col-10">
-              <div class="col-lg-11 col-md-11 mx-lg-auto">
-                <div class="card bg-dark text-white border-0 rounded p-4">
+              <div class="col-4">
+                <div
+                  class="testimonial-card rounded bg-dark text-white col-11 mx-auto p-4 h-100"
+                >
                   <div
-                    class="d-flex justify-content-between align-items-start gap-2"
+                    class="d-flex justify-content-between align-items-start gap-3"
                   >
-                    <img
-                      class="img-fluid quote-icon col-1 mt-1"
-                      src="./img/doublequotes.png"
-                      alt=""
-                    />
-                    <p class="col mb-4 inter">
-                      Fantastic customer service. I shifted from a traditional
-                      bank to Sable [and] Sable’s customer service helped me
-                      answer all the questions that I needed to switch.
+                    <p class="fs-1 mt-2">❝</p>
+                    <p class="testimonial-text lh-base">
+                      DEPL’s deep technical knowledge ensures that even the most
+                      challenging plating requirements are handled flawlessly.
+                      They take the time to understand our needs and recommend
+                      the most suitable coating solutions
                     </p>
                   </div>
-                  <div
-                    class="author d-flex justify-content-lg-start align-items-center gap-2"
-                  >
-                    <span
-                      class="line mx-4 py-1 px-1 w-8 d-inline bg-white rounded"
-                    ></span>
-                    <span class="fw-bold inter">K Oiwake</span>
+                  <div class="d-flex align-items-center mt-1">
+                    <span class="author-line d-inline-block bg-white"></span>
+                    <span class="fw-normal fs-6">Anand</span>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="col-lg-4 col-md-4 h-auto col-md-4 col-10">
-              <div class="col-lg-11 col-md-11 mx-lg-auto">
-                <div class="card bg-dark text-white border-0 rounded p-4">
+              <div class="col-4">
+                <div
+                  class="testimonial-card rounded bg-dark text-white mx-auto col-11 p-4 h-100"
+                >
                   <div
-                    class="d-flex justify-content-between align-items-start gap-2"
+                    class="d-flex justify-content-between align-items-start gap-3"
                   >
-                    <img
-                      class="img-fluid quote-icon col-1 mt-1"
-                      src="./img/doublequotes.png"
-                      alt=""
-                    />
-                    <p class="col mb-4 inter">
-                      Fantastic customer service. I shifted from a traditional
-                      bank to Sable [and] Sable’s customer service helped me
-                      answer all the questions that I needed to switch.
+                    <p class="fs-1 mt-2">❝</p>
+                    <p class="testimonial-text lh-base">
+                      We are consistently impressed with their ability to meet
+                      urgent deadlines without compromising quality. Timely
+                      delivery is their hallmark, and it adds tremendous value
+                      to our operations
                     </p>
                   </div>
+                  <div class="d-flex align-items-center mt-1">
+                    <span class="author-line d-inline-block bg-white"></span>
+                    <span class="fw-normal fs-6">Subash</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div
+                  class="testimonial-card rounded bg-dark text-white mx-auto col-11 p-4 h-100"
+                >
                   <div
-                    class="author d-flex justify-content-lg-start align-items-center gap-2"
+                    class="d-flex justify-content-between align-items-start gap-3"
                   >
-                    <span
-                      class="line mx-4 py-1 px-1 w-8 d-inline bg-white rounded"
-                    ></span>
-                    <span class="fw-bold inter">K Oiwake</span>
+                    <p class="fs-1 mt-2">❝</p>
+                    <p class="testimonial-text lh-base">
+                      Dynamic Electroplaters blend advanced technology with
+                      skilled craftsmanship, producing results that are precise,
+                      consistent, and reliable across every batch
+                    </p>
+                  </div>
+                  <div class="d-flex align-items-center mt-1">
+                    <span class="author-line d-inline-block bg-white"></span>
+                    <span class="fw-normal fs-6">Ramraj</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div
+                  class="testimonial-card rounded bg-dark text-white col-11 mx-auto p-4 h-100"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-start gap-3"
+                  >
+                    <p class="fs-1 mt-2">❝</p>
+                    <p class="testimonial-text lh-base">
+                      DEPL team’s expertise in electroplating chemistry and
+                      process optimization means zero defects in our parts -
+                      saving us both rework and costs
+                    </p>
+                  </div>
+                  <div class="d-flex align-items-center mt-1">
+                    <span class="author-line d-inline-block bg-white"></span>
+                    <span class="fw-normal fs-6">Rahul</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div
+                  class="testimonial-card rounded bg-dark text-white col-11 mx-auto p-4 h-100"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-start gap-3"
+                  >
+                    <p class="fs-1 mt-2">❝</p>
+                    <p class="testimonial-text lh-base">
+                      In a competitive market, finding a partner who delivers
+                      exceptional quality and dependable service is rare.
+                      Dynamic Electroplaters have proven themselves time and
+                      again
+                    </p>
+                  </div>
+                  <div class="d-flex align-items-center mt-1">
+                    <span class="author-line d-inline-block bg-white"></span>
+                    <span class="fw-normal fs-6">Vikash</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div
+                  class="testimonial-card rounded bg-dark text-white col-11 mx-auto p-4 h-100"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-start gap-3"
+                  >
+                    <p class="fs-1 mt-2">❝</p>
+                    <p class="testimonial-text lh-base">
+                      Every interaction with DEPL is professional, transparent,
+                      and solution-driven. They anticipate potential process
+                      issues and address them before they impact delivery
+                    </p>
+                  </div>
+                  <div class="d-flex align-items-center mt-1">
+                    <span class="author-line d-inline-block bg-white"></span>
+                    <span class="fw-normal fs-6">Shyam</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div
+                  class="testimonial-card rounded bg-dark text-white col-11 mx-auto p-4 h-100"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-start gap-3"
+                  >
+                    <p class="fs-1 mt-2">❝</p>
+                    <p class="testimonial-text lh-base">
+                      Dynamic Electroplaters have earned our trust through
+                      consistent performance, honest communication, and an
+                      unwavering focus on client satisfaction
+                    </p>
+                  </div>
+                  <div class="d-flex align-items-center mt-1">
+                    <span class="author-line d-inline-block bg-white"></span>
+                    <span class="fw-normal fs-6">Surrender</span>
                   </div>
                 </div>
               </div>
@@ -382,137 +474,155 @@
           </div>
         </div>
       </section>
-      <footer
-        class="container-fluid footer col-lg-12 bg-dark text-white mt-lg-0 mt-5"
-      >
-        <div class="row">
-          <div class="text-center mt-5 py-5">
-            <h2 class="geistmono">Tell us what are you Looking for?</h2>
-            <div
-              class="bg-white mt-3 px-4 py-2 d-inline-flex justify-content-lg-between gap-2 rounded col-lg-7 col-md-7 col-9"
-            >
-              <input
-                class="inputbox outline-white border-0 w-100"
-                placeholder="Kindly enter your requirement"
-                type="text"
-              />
-              <button class="btn btn-white btn-outline-dark rounded-pill">
-                Submit
-              </button>
-            </div>
-          </div>
+    </main>
+    <footer
+      class="container-fluid footer col-12 bg-dark text-white mt-lg-0 mt-5"
+    >
+      <div class="row">
+        <div class="text-center mt-5 py-4">
+          <h2 class="geistmono">Tell us what are you Looking for?</h2>
           <div
-            class="col-11 flex-lg-nowrap flex-wrap d-flex justify-content-between align-items-start mx-auto py-5"
+            class="bg-white mt-3 px-4 py-2 d-inline-flex justify-content-lg-between gap-2 rounded col-lg-7 col-md-9 col-11"
           >
-            <div class="col-lg-2 col-4">
-              <img
-                src="./img/indexpage/footerLogo.png"
-                alt=""
-                class="img img-fluid footerLogo col-6"
-              />
-            </div>
-            <div class="col-lg-2 col-4">
-              <h6>Contact Info</h6>
-              <address class="col-8">
-                Head Office <br />
-                C-58,Sidco Industrial Estate,Maraimalai Nagar,Chennai,Tamil Nadu
-                - 603209.
-              </address>
-            </div>
-            <div class="col-lg-2 col-4">
-              <h6>Branch Office</h6>
-              <address class="col-8">
-                No.259, Tiny Shed,Ambattur Industrial Estate,Chennai,Tamil Nadu
-                - 600058.
-              </address>
-            </div>
-            <div class="col-lg-2 col-6 mt-lg-0 mt-md-4">
-              <h6>Contact Details</h6>
-              <address class="col-8">
-                <a
-                  class="text-decoration-none text-white"
-                  href="mailto:dynamicmmn@rediffmail.com"
-                  >dynamicmmn@rediffmail.com</a
-                >
-                <a
-                  class="text-decoration-none text-white"
-                  href="tel:+918610101495"
-                  >+91 86101 01495</a
-                ><br />
-                <a
-                  class="text-decoration-none text-white"
-                  href="tel:+919841091114"
-                  >+91 98410 91114</a
-                ><br />
-                <a
-                  class="text-decoration-none text-white"
-                  href="tel:+919841631114"
-                  >+91 98416 31114</a
-                ><br />
-                <a
-                  class="text-decoration-none text-white"
-                  href="tel:+91 44 474 00120"
-                  >+91 44 474 00120</a
-                >
-              </address>
-            </div>
-            <div class="col-lg-2 col-6 mt-0 mt-md-4">
-              <ul class="col-10 mx-auto">
-                <h6>Quick Links</h6>
-                <li>
-                  <a href="" class="text-decoration-none text-white">Home</a>
-                </li>
-                <li>
-                  <a href="" class="text-decoration-none text-white">Profile</a>
-                </li>
-                <li>
-                  <a href="" class="text-decoration-none text-white">Quality</a>
-                </li>
-                <li>
-                  <a href="" class="text-decoration-none text-white"
-                    >Our Services</a
-                  >
-                </li>
-                <li>
-                  <a href="" class="text-decoration-none text-white"
-                    >In House Lab</a
-                  >
-                </li>
-                <li>
-                  <a href="" class="text-decoration-none text-white">Gallery</a>
-                </li>
-                <li>
-                  <a href="" class="text-decoration-none text-white"
-                    >Contact Us</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div class="col-lg-2 col-11 mt-lg-0 mt-md-2 mx-auto">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.6753872581253!2d80.10300487454592!3d12.928573015821268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525fb04f9981d1%3A0xd538069bcd74be65!2sJOKAR%20Creations%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1759222539980!5m2!1sen!2sin"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-                class="col-lg-10 col-12"
-              ></iframe>
-            </div>
+            <input
+              class="outline-none outline-white border-0 w-100 inputbox"
+              placeholder="Kindly enter your requirement"
+              type="text"
+            />
+            <button
+              class="btn btn-white btn-outline-dark rounded-pill aboutBtn text-white"
+            >
+              Submit
+            </button>
           </div>
         </div>
         <div
-          class="d-flex justify-content-around align-items-center gap-3 py-3 col-lg-5 col-md-8 mx-auto"
+          class="col-lg-11 col-md-10 col-11 flex-lg-row flex-md-row flex-wrap flex-column d-flex justify-content-between align-items-start mx-auto py-5"
         >
-          <p class="mb-0">&copy; Copyright 2025. All Rights Reserved</p>
-          <p class="mb-0">|</p>
-          <p class="mb-0">Terms & Conditions</p>
-          <p class="mb-0">|</p>
-          <p class="mb-0">Privacy Policy</p>
+          <div
+            class="d-flex col-lg-4 col-md-8 col-11 mx-auto flex-lg-row flex-md-row-reverse flex-column"
+          >
+            <div class="col-lg-6 col-md-4 col-10 mx-auto footerdiv1">
+              <div class="col-11 mx-auto">
+                <a href="./index.html"
+                  ><img
+                    src="./img/indexpage/logo.jpg"
+                    alt=""
+                    class="img img-fluid d-block col-7 mx-auto footerimg bg-light"
+                /></a>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-4 col-10 mx-auto footerdiv2">
+              <h6 class="text-center contactinfo">Contact Info</h6>
+              <address class="col-lg-8 col-md-12 col-10 mx-auto text-center">
+                <h6>Head Office</h6>
+                C-58, Sidco Industrial Estate, <br />Maraimalai Nagar,
+                <br />Chennai, <br />Tamil Nadu - 603209.
+              </address>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 col-10 mx-auto footerdiv3">
+            <h6 class="text-center">Branch Office</h6>
+            <address class="col-10 mx-auto text-center">
+              No.259, Tiny Shed, <br />Ambattur Industrial Estate,
+              <br />Chennai, <br />Tamil Nadu - 600058.
+            </address>
+          </div>
+          <div
+            class="col-lg-2 col-md-4 col-10 mt-lg-0 mx-auto mt-md-2 footerdiv4"
+          >
+            <h6 class="text-center">Contact Details</h6>
+            <address class="col-8 mx-auto text-center">
+              <a
+                class="text-decoration-none text-white"
+                href="mailto:dynamicmmn@rediffmail.com"
+                >dynamicmmn@rediffmail.com</a
+              ><br />
+              <a
+                class="text-decoration-none text-white"
+                href="tel:+918610101495"
+                >+91 86101 01495</a
+              ><br />
+              <a
+                class="text-decoration-none text-white"
+                href="tel:+919841091114"
+                >+91 98410 91114</a
+              ><br />
+              <a
+                class="text-decoration-none text-white"
+                href="tel:+919841631114"
+                >+91 98416 31114</a
+              ><br />
+              <a
+                class="text-decoration-none text-white"
+                href="tel:+91 44 474 00120"
+                >+91 44 474 00120</a
+              >
+            </address>
+          </div>
+          <div
+            class="col-lg-2 col-md-4 col-10 mt-lg-0 mt-md-2 mx-auto footerdiv5"
+          >
+            <ul class="col-10 mx-auto m-0 text-center list-unstyled">
+              <h6>Quick Links</h6>
+              <li>
+                <a href="" class="text-decoration-none text-white">Home</a>
+              </li>
+              <li>
+                <a href="" class="text-decoration-none text-white">Profile</a>
+              </li>
+              <li>
+                <a href="" class="text-decoration-none text-white">Quality</a>
+              </li>
+              <li>
+                <a href="" class="text-decoration-none text-white"
+                  >Our Services</a
+                >
+              </li>
+              <li>
+                <a href="" class="text-decoration-none text-white"
+                  >In House Lab</a
+                >
+              </li>
+              <li>
+                <a href="" class="text-decoration-none text-white">Gallery</a>
+              </li>
+              <li>
+                <a href="" class="text-decoration-none text-white"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div
+            class="col-lg-2 col-md-12 col-10 mt-lg-0 mt-md-2 mx-auto footerdiv6"
+          >
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.6753872581253!2d80.10300487454592!3d12.928573015821268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525fb04f9981d1%3A0xd538069bcd74be65!2sJOKAR%20Creations%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1759222539980!5m2!1sen!2sin"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              class="col-lg-11 col-12 mx-auto vh-35"
+            >
+            </iframe>
+          </div>
         </div>
-      </footer>
-    </div>
-    <script src="./js/app.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      </div>
+      <div
+        class="d-flex justify-content-between align-items-center gap-3 py-3 col-lg-5 col-md-8 col-11 mx-auto"
+      >
+        <p class="mb-0">&copy; Copyright 2025. All Rights Reserved</p>
+        <p class="mb-0">|</p>
+        <p class="mb-0">Terms & Conditions</p>
+        <p class="mb-0">|</p>
+        <p class="mb-0">Privacy Policy</p>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="./js/slick.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="./js/app.js"></script>
   </body>
 </html>

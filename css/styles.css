@@ -26,11 +26,17 @@
 .w-8 {
   width: 8vw !important;
 }
+.w-20 {
+  width: 20% !important;
+}
 .w-40 {
   width: 40vw !important;
 }
 .w-35 {
   width: 35% !important;
+}
+.w-98 {
+  width: 98% !important;
 }
 /**********************************Height**********************************/
 .vh-15 {
@@ -63,7 +69,8 @@
 /************************************************Colors******************************************************/
 .aboutBtn,
 .aboutpageBtn,
-.contactbtn {
+.contactbtn,
+.qualitybtn {
   background: linear-gradient(90deg, #74473b 0%, #a46e58 100%);
 }
 /**********************************************NavBar*************************************************************************/
@@ -124,7 +131,7 @@
   background-repeat: no-repeat;
 }
 .heroSection {
-  background-image: url("../img/indexpage/backgroundImg.png");
+  background-image: url("../img/indexpage/Hero-gif.gif");
 }
 .abouthero {
   background-image: url("../img/aboutpage/bg.png");
@@ -165,6 +172,9 @@
 .ourProjects3 {
   background-image: url("../img/indexpage/ourProjectImg4.png");
 }
+.safetyimg {
+  background-image: url("../img/quality/project/prj1.png");
+}
 .humanResources {
   background-image: url("../img/quality/project/prj2.png");
 }
@@ -191,6 +201,9 @@
 .loremtxt {
   font-size: 2vw !important;
   text-align: justify;
+}
+.text-justify {
+  text-align: justify !important;
 }
 .testimonialtxt {
   font-size: 1vw !important;
@@ -248,11 +261,6 @@
 .mainsection {
   overflow: hidden;
 }
-.qualitybtn {
-  bottom: 14vw !important;
-  left: 20vw !important;
-  position: relative !important;
-}
 .change .bar2 {
   opacity: 0;
 }
@@ -283,6 +291,38 @@
 /***************************************************About Page******************************************************************/
 .aboutpageBtn {
   border: 2px solid #fff;
+}
+.certificateparent {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 8px;
+}
+
+.cdiv1 {
+  grid-column: span 2 / span 2;
+  grid-row: span 4 / span 4;
+}
+
+.cdiv2 {
+  grid-column: span 2 / span 2;
+  grid-row: span 2 / span 2;
+  grid-column-start: 1;
+  grid-row-start: 5;
+}
+
+.cdiv3 {
+  grid-column: span 2 / span 2;
+  grid-row: span 2 / span 2;
+  grid-column-start: 3;
+  grid-row-start: 1;
+}
+
+.cdiv4 {
+  grid-column: span 2 / span 2;
+  grid-row: span 4 / span 4;
+  grid-column-start: 3;
+  grid-row-start: 3;
 }
 .galleryimg1 {
   height: 100% !important;
@@ -340,6 +380,20 @@
 .contactbtn {
   font-size: 1.5vw !important;
 }
+.qualitybtn {
+  padding: 10px 20px;
+}
+
+.service-hero {
+  margin: 90px 20px 20px 20px;
+  background: #bd9787;
+  background: linear-gradient(
+    180deg,
+    rgba(164, 110, 88, 0.72) 23.93%,
+    rgba(101, 59, 51, 0.8) 112.24%
+  );
+}
+
 @keyframes slide-underline {
   0% {
     width: 0;
@@ -351,7 +405,8 @@
   }
 }
 @media screen and (max-width: 990px) {
-  .navlinks {
+  .navlinks,
+  .contactinfo {
     display: none !important;
   }
   .responsive {
@@ -366,6 +421,12 @@
     text-align: center;
     padding: 1rem 0;
     line-height: 2.5rem;
+  }
+  .qualitybtn {
+    padding: 10px 20px !important;
+  }
+  .w-38 {
+    width: 38vw !important;
   }
   .icon {
     font-size: 1.8rem;
@@ -396,46 +457,14 @@
   .abouttxt {
     width: 65% !important;
   }
-}
-@media screen and (max-width: 767px) {
-  .aboutsection,
-  .abouttxt {
-    width: 100% !important;
-  }
-  .testting {
-    margin-top: 20px !important;
-    width: 100% !important;
+  .text-overlay {
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
   }
 }
-@media screen and (max-width: 725px) {
-  .footerdiv1,
-  .footerdiv6 {
-    width: 90% !important;
-    margin-right: auto !important;
-    margin-left: auto !important;
-  }
-  .footerimg {
-    width: 25% !important;
-    margin-right: auto !important;
-    margin-left: auto !important;
-  }
-  .footerdiv2,
-  .footerdiv3,
-  .footerdiv4,
-  .footerdiv5 {
-    width: 50% !important;
-    margin-right: auto !important;
-    margin-left: auto !important;
-  }
-  .footerdiv2,
-  .footerdiv3,
-  .footerdiv4,
-  .footerdiv5,
-  .footerdiv6 {
-    margin-top: 40px !important;
-  }
-}
-
 @media screen and (max-width: 600px) {
   .loremtxt {
     font-size: 20px !important;
