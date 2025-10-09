@@ -385,13 +385,43 @@
 }
 
 .service-hero {
-  margin: 90px 20px 20px 20px;
   background: #bd9787;
   background: linear-gradient(
     180deg,
     rgba(164, 110, 88, 0.72) 23.93%,
     rgba(101, 59, 51, 0.8) 112.24%
   );
+}
+.d-btns {
+  background-color: rgba(239, 239, 239, 0.31);
+  border: 2px solid white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  width: 95%;
+}
+.d-btns button {
+  border: none;
+  background-color: transparent;
+  font-size: 1vw;
+  padding: 25px 10px;
+  font-family: "Instrument Sans", sans-serif;
+}
+.d-btns button.btn-active {
+  background: #ffffff;
+  border-radius: 10px;
+  color: black;
+  -webkit-box-shadow: 0px 3px 9px 4px rgba(0, 0, 0, 0.78);
+  box-shadow: 0px 3px 9px 4px rgba(0, 0, 0, 0.78);
+}
+.model {
+  width: 60% !important;
+  height: 70% !important;
+}
+model-viewer {
+  height: 100% !important;
+  width: 100% !important;
 }
 
 @keyframes slide-underline {
