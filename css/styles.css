@@ -75,6 +75,12 @@
 .vh-80 {
   height: 80vh !important;
 }
+.galleryimg1 {
+  height: 100% !important;
+}
+.steelimg {
+  height: 64vh !important;
+}
 /************************************************Colors******************************************************/
 .aboutBtn,
 .aboutpageBtn,
@@ -336,12 +342,7 @@
   grid-column-start: 3;
   grid-row-start: 3;
 }
-.galleryimg1 {
-  height: 100% !important;
-}
-.steelimg {
-  height: 64vh !important;
-}
+
 .steelimg1 {
   margin-left: 4rem !important;
 }
@@ -453,6 +454,89 @@ model-viewer {
 .toggle:not(.active):hover {
   background: rgba(255, 255, 255, 0.15);
 }
+
+.abouttxt {
+  font-size: 1.5vw;
+}
+
+.galleryparent {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  gap: 8px;
+}
+
+.gdiv1 {
+  grid-column: span 2 / span 2;
+  grid-row: span 3 / span 3;
+}
+
+.gdiv2 {
+  grid-column: span 4 / span 4;
+  grid-row: span 2 / span 2;
+  grid-column-start: 3;
+}
+
+.gdiv3 {
+  grid-column: span 2 / span 2;
+  grid-row: span 2 / span 2;
+  grid-column-start: 1;
+  grid-row-start: 4;
+}
+
+.gdiv4 {
+  grid-column: span 2 / span 2;
+  grid-row: span 3 / span 3;
+  grid-column-start: 3;
+  grid-row-start: 3;
+}
+
+.gdiv5 {
+  grid-column: span 2 / span 2;
+  grid-row: span 3 / span 3;
+  grid-column-start: 5;
+  grid-row-start: 3;
+}
+
+.gdiv6 {
+  grid-column: span 4 / span 4;
+  grid-row: span 2 / span 2;
+  grid-row-start: 6;
+}
+
+.gdiv7 {
+  grid-column: span 2 / span 2;
+  grid-row: span 3 / span 3;
+  grid-column-start: 5;
+  grid-row-start: 6;
+}
+
+.gdiv8 {
+  grid-column: span 2 / span 2;
+  grid-row: span 3 / span 3;
+  grid-row-start: 8;
+}
+
+.gdiv9 {
+  grid-column: span 2 / span 2;
+  grid-row: span 3 / span 3;
+  grid-column-start: 3;
+  grid-row-start: 8;
+}
+
+.gdiv10 {
+  grid-column: span 2 / span 2;
+  grid-row: span 2 / span 2;
+  grid-column-start: 5;
+  grid-row-start: 9;
+}
+
+.gdiv11 {
+  grid-column: span 6 / span 6;
+  grid-row: span 2 / span 2;
+  grid-row-start: 11;
+}
+
 @keyframes slide-underline {
   0% {
     width: 0;
@@ -551,9 +635,6 @@ model-viewer {
   .footerdiv3 {
     text-align: end !important;
   }
-  /* .contacthead {
-    text-align: center !important;
-  } */
 }
 @media screen and (max-width: 750px) {
   .footerdiv2,
