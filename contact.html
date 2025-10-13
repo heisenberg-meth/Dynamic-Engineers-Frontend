@@ -24,11 +24,13 @@
       <div
         class="d-flex vh-15 justify-content-between align-items-center w-100 px-4"
       >
-        <img
-          class="img img-fluid w-8 logo"
-          src="./img/indexpage/logo.jpg"
-          alt="Logo"
-        />
+        <a href="./index.html">
+          <img
+            class="img img-fluid w-8 logo"
+            src="./img/indexpage/logo.jpg"
+            alt="Logo"
+          />
+        </a>
         <div
           class="xbtn text-dark icon d-lg-none d-md-inline-block btn toggler"
           onclick="myFunction(this)"
@@ -38,7 +40,7 @@
           <div class="bar3"></div>
         </div>
         <ul
-          class="navmenu navlinks vh-md-100 flex-lg-row flex-column align-items-center gap-4 list-unstyled gentiumbookplus"
+          class="navmenu navlinks flex-lg-row flex-column align-items-center gap-4 list-unstyled gentiumbookplus"
         >
           <li>
             <a
@@ -90,14 +92,21 @@
             >
           </li>
           <li>
-            <img class="iso" src="./img/indexpage/iso.png" alt="ISO" />
+            <img src="./img/indexpage/iso.png" alt="ISO" />
+          </li>
+          <li>
+            <img
+              src="./img/indexpage/logo kaif.png"
+              alt=""
+              class="img-fluid lastlogo"
+            />
           </li>
         </ul>
       </div>
     </nav>
     <div class="mainsection">
-      <section class="container-fluid">
-        <section class="row contacthero bgcontent rounded-3 zn-1">
+      <section class="container-fluid contacthero bgcontent rounded-3 zn-1">
+        <div class="row">
           <div
             class="d-flex justify-content-center align-items-start px-5 py-5 mt-5 flex-lg-nowrap flex-wrap"
           >
@@ -112,78 +121,71 @@
               </div>
             </div>
             <div class="col-lg-8 col-11 mx-auto">
-              <div class="col-lg-11 mx-auto">
-                <form
-                  class="row d-flex flex-column needs-validation bg-white rounded-5 mb-5"
-                  novalidate
-                >
-                  <div class="col-10 mx-auto mt-5">
-                    <p class="mb-2 px-3">Name</p>
-                    <input
-                      type="text"
-                      class="form-control px-3 py-3 rounded-pill"
-                      id="name"
-                      placeholder="Enter your Name..."
-                      required
-                    />
-                    <div class="valid-feedback">Valid Name!</div>
-                    <div class="invalid-feedback">Please enter a Name.</div>
+              <form
+                class="row d-flex flex-column needs-validation bg-white rounded-5 mb-5 col-lg-11 mx-auto"
+                novalidate
+              >
+                <div class="col-10 mx-auto mt-5">
+                  <input
+                    type="text"
+                    class="form-control px-3 py-3 rounded-pill"
+                    id="name"
+                    placeholder="Enter your Name..."
+                    required
+                  />
+                  <div class="valid-feedback">Valid Name!</div>
+                  <div class="invalid-feedback">Please enter a Name.</div>
+                </div>
+                <div class="col-10 mx-auto mt-4">
+                  <input
+                    type="number"
+                    class="form-control px-3 py-3 rounded-pill"
+                    id="mobile"
+                    placeholder="Enter your Number..."
+                    required
+                  />
+                  <div class="valid-feedback">Valid Number!</div>
+                  <div class="invalid-feedback">
+                    Please enter a Mobile Number.
                   </div>
-                  <div class="col-10 mx-auto">
-                    <p class="mb-2 px-3 mt-2">Mobile Number</p>
-                    <input
-                      type="number"
-                      class="form-control px-3 py-3 rounded-pill"
-                      id="mobile"
-                      placeholder="Enter your Number..."
-                      required
-                    />
-                    <div class="valid-feedback">Valid Number!</div>
-                    <div class="invalid-feedback">
-                      Please enter a Mobile Number.
-                    </div>
+                </div>
+                <div class="col-10 mx-auto mt-4">
+                  <input
+                    type="email"
+                    class="form-control px-3 py-3 rounded-pill"
+                    id="email"
+                    placeholder="Enter your Email..."
+                    required
+                  />
+                  <div class="valid-feedback">Valid Mail!</div>
+                  <div class="invalid-feedback">Please enter a email.</div>
+                </div>
+                <div class="col-10 mx-auto mt-4">
+                  <textarea
+                    class="form-control px-3 py-3 rounded-5"
+                    id="message"
+                    placeholder="Enter your Message..."
+                    rows="4"
+                    required
+                  >
+                  </textarea>
+                  <div class="invalid-feedback">
+                    Please enter a message in the textarea.
                   </div>
-                  <div class="col-10 mx-auto">
-                    <p class="mb-2 px-3 mt-2">Email</p>
-                    <input
-                      type="email"
-                      class="form-control px-3 py-3 rounded-pill"
-                      id="email"
-                      placeholder="Enter your Email..."
-                      required
-                    />
-                    <div class="valid-feedback">Valid Mail!</div>
-                    <div class="invalid-feedback">Please enter a email.</div>
-                  </div>
-                  <div class="col-10 mx-auto mb-3">
-                    <p class="mb-2 px-3 mt-2">How can we help you?</p>
-                    <textarea
-                      class="form-control px-3 py-3 rounded-5"
-                      id="message"
-                      placeholder="Enter your Message..."
-                      rows="4"
-                      required
-                    >
-                    </textarea>
-                    <div class="invalid-feedback">
-                      Please enter a message in the textarea.
-                    </div>
-                  </div>
-
-                  <div class="col-10 mx-auto">
-                    <button
-                      class="btn contactbtn rounded-pill mb-3 px-5 gentiumbookplus text-white w-25"
-                      type="submit"
-                      onclick="sendmail()"
-                    >
-                      Send
-                    </button>
-                  </div>
-                </form>
-              </div>
+                </div>
+                <div class="col-10 mx-auto mt-4">
+                  <button
+                    class="btn contactbtn rounded-pill mb-3 px-5 gentiumbookplus text-white w-25"
+                    type="submit"
+                    onclick="sendmail()"
+                  >
+                    Send
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
-        </section>
+        </div>
       </section>
     </div>
     <footer
@@ -203,85 +205,89 @@
             <button
               class="btn btn-white btn-outline-dark rounded-pill aboutBtn text-white"
             >
-              Submit
+              <a class="text-decoration-none text-white" href="./contact.html"
+                >Submit</a
+              >
             </button>
           </div>
         </div>
-        <div
-          class="col-lg-11 col-md-10 col-11 flex-lg-row flex-md-row flex-wrap flex-column d-flex justify-content-between align-items-start mx-auto py-5"
-        >
-          <div
-            class="d-flex col-lg-5 col-md-8 col-11 justify-content-between align-items-lg-start align-items-md-center mx-auto flex-lg-row flex-md-row-reverse flex-column"
-          >
-            <div class="col-lg-6 col-md-4 col-10 footerdiv1">
-              <div class="col-11">
-                <a href="./index.html"
-                  ><img
-                    src="./img/indexpage/logo.jpg"
-                    alt=""
-                    class="img img-fluid d-block col-7 footerimg bg-light"
-                /></a>
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-4 col-10 footerdiv2">
-              <h6 class="contactinfo">Contact Info</h6>
-              <address class="col-lg-10 col-md-12 col-10">
-                <h6>Head Office</h6>
-                C-58, Sidco Industrial Estate, Maraimalai Nagar, Chennai, Tamil
-                Nadu - 603209.
-              </address>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-4 col-10 footerdiv3">
-            <h6 class="">Branch Office</h6>
-            <address class="col-lg-10 col-12">
-              No.259, Tiny Shed, <br />Ambattur Industrial Estate,
-              <br />Chennai, <br />Tamil Nadu - 600058.
-            </address>
-          </div>
-          <div class="d-flex col-lg-5 col-11">
-            <div class="col-lg-6 col-md-4 col-10 mt-lg-0 mt-md-2 footerdiv4">
-              <h6 class="">Contact Details</h6>
-              <address class="col-7">
-                <a
-                  class="text-decoration-none text-white"
-                  href="mailto:dynamicmmn@rediffmail.com"
-                  >dynamicmmn <br />@rediffmail.com</a
-                >
-                <a
-                  class="text-decoration-none text-white"
-                  href="tel:+918610101495"
-                  >+91 86101 01495</a
-                >
-                <a
-                  class="text-decoration-none text-white"
-                  href="tel:+919841091114"
-                  >+91 98410 91114</a
-                >
-                <a
-                  class="text-decoration-none text-white"
-                  href="tel:+919841631114"
-                  >+91 98416 31114</a
-                >
-                <a
-                  class="text-decoration-none text-white"
-                  href="tel:+91 44 474 00120"
-                  >+91 44 474 00120</a
-                >
-              </address>
-            </div>
+        <div class="footer">
+          <div class="container-fluid col-12 mx-auto py-5">
             <div
-              class="col-lg-6 col-md-9 col-10 mt-lg-0 mt-md-2 mx-auto footerdiv6"
+              class="row col-lg-12 justify-content-lg-between justify-content-around flex-lg-nowrap flex-wrap align-items-lg-start align-items-center gap-lg-0 gap-md-3 gap-3"
             >
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.6753872581253!2d80.10300487454592!3d12.928573015821268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525fb04f9981d1%3A0xd538069bcd74be65!2sJOKAR%20Creations%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1759222539980!5m2!1sen!2sin"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-                class="col-lg-11 col-12 mx-auto vh-35"
-              >
-              </iframe>
+              <div class="col-lg-2 col-md-3 col-12">
+                <img
+                  src="/img/indexpage/logo.jpg"
+                  alt=""
+                  class="d-block img-fluid mx-auto foot-logo w-50 bg-white"
+                />
+              </div>
+              <div class="col-lg-2 col-md-3 col-8">
+                <div
+                  class="d-flex flex-column text-lg-start text-md-start text-center"
+                >
+                  <h6>Head Office</h6>
+                  <address>
+                    No. C-58,<br />Sidco Industrial Estate, Maraimalai Nagar,
+                    <br />Tamil Nadu - 603209
+                  </address>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-3 col-8">
+                <div
+                  class="d-flex flex-column gap-3 text-lg-start text-md-start text-center"
+                >
+                  <address>
+                    <h6>Branch Office</h6>
+                    No.259, Tiny Shed, Ambattur Industrial Estate, Chennai,
+                    <br />
+                    Tamil Nadu - 600058
+                  </address>
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-12">
+                <div
+                  class="d-flex flex-column text-lg-start text-md-start text-center"
+                >
+                  <p class="head mb-0">Contact Details</p>
+                  <a
+                    href="mailto:dynamicelectroplaters@gmail.com"
+                    class="text-decoration-none text-white"
+                    >dynamicelectroplaters@gmail.com</a
+                  >
+                  <a
+                    href="tel:+91 86101 01495"
+                    class="text-decoration-none text-white"
+                    >+91 86101 01495</a
+                  >
+                  <a
+                    href="tel:+91 98410 91114"
+                    class="text-decoration-none text-white"
+                    >+91 98410 91114</a
+                  >
+                  <a
+                    href="tel:+91 98416 31114"
+                    class="text-decoration-none text-white"
+                    >+91 98416 31114</a
+                  >
+                  <a
+                    href="tel:+91 44 474 00120"
+                    class="text-decoration-none text-white"
+                    >+91 44 474 00120</a
+                  >
+                </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-12">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15564.22387150557!2d80.01413789522074!3d12.774877350361043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52f9e86c0dff31%3A0x653da2c8a8ca6395!2sDynamic%20Engineers%20%26%20Electroplaters!5e0!3m2!1sen!2sin!4v1760072951296!5m2!1sen!2sin"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  class="w-100"
+                ></iframe>
+              </div>
             </div>
           </div>
         </div>
@@ -296,8 +302,9 @@
         <p class="mb-0">Privacy Policy</p>
       </div>
     </footer>
-    <script src="./js/emailjs.js"></script>
     <script src="./js/app.js"></script>
+    <script src="./js/emailjs.js"></script>
+    <script src="./js/formvalidatoin.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <script

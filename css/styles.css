@@ -38,6 +38,9 @@
 .w-98 {
   width: 98% !important;
 }
+.lastlogo {
+  width: 4vw !important;
+}
 /**********************************Height**********************************/
 .h100 {
   height: 100% !important;
@@ -406,7 +409,7 @@
 }
 .model {
   width: 60%;
-  height: 70%;
+  height: 70vh;
 }
 model-viewer {
   width: 100%;
@@ -420,7 +423,6 @@ model-viewer {
 .toggle-btns {
   display: flex;
   border: 1px solid #ffffff;
-  /* background: rgb(255, 255, 255, 0.3); */
   border-radius: 1rem;
   overflow: hidden;
   width: 98%;
@@ -451,7 +453,6 @@ model-viewer {
 .toggle:not(.active):hover {
   background: rgba(255, 255, 255, 0.15);
 }
-
 @keyframes slide-underline {
   0% {
     width: 0;
@@ -525,9 +526,6 @@ model-viewer {
     padding: 20px;
     border-radius: 10px;
   }
-  .service-hero {
-    height: 152vh !important;
-  }
   .toggle-btns {
     display: flex;
     flex-wrap: wrap;
@@ -553,9 +551,9 @@ model-viewer {
   .footerdiv3 {
     text-align: end !important;
   }
-  .contacthead {
+  /* .contacthead {
     text-align: center !important;
-  }
+  } */
 }
 @media screen and (max-width: 750px) {
   .footerdiv2,
@@ -617,8 +615,5 @@ model-viewer {
     text-align: center !important;
     margin-top: 20px !important;
     width: 90% !important;
-  }
-  .service-hero {
-    height: 152vh !important;
   }
 }

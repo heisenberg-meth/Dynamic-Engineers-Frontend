@@ -32,24 +32,3 @@ const observer = new IntersectionObserver(
   }
 );
 cards.forEach((card) => observer.observe(card));
-
-const forms = document.querySelectorAll(".needs-validation");
-
-forms.forEach(function (form) {
-  form.addEventListener("submit", (e) => {
-    if (!form.checkValidity()) {
-      e.preventDefault();
-      e.stopPropagation();
-    }
-    form.classList.add("was-validated");
-  });
-});
-
-const toggles = document.querySelectorAll(".togglebtn");
-
-toggles.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    toggles.forEach((b) => b.classList.remove("active"));
-    btn.classList.add("active");
-  });
-});

@@ -28,3 +28,12 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+const toggles = document.querySelectorAll(".togglebtn");
+
+toggles.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    toggles.forEach((b) => b.classList.remove("active"));
+    btn.classList.add("active");
+  });
+});
