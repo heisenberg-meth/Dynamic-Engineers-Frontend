@@ -45,7 +45,7 @@ forms.forEach(function (form) {
   });
 });
 
-const toggles = document.querySelectorAll(".toggle");
+const toggles = document.querySelectorAll(".togglebtn");
 
 toggles.forEach((btn) => {
   btn.addEventListener("click", () => {

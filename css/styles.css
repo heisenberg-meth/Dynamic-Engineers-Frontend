@@ -39,6 +39,12 @@
   width: 98% !important;
 }
 /**********************************Height**********************************/
+.h100 {
+  height: 100% !important;
+}
+.vh100 {
+  height: 100vh !important;
+}
 .vh-15 {
   height: 15vh !important;
 }
@@ -132,6 +138,9 @@
 }
 .heroSection {
   background-image: url("../img/indexpage/Hero-gif.gif");
+  height: 100vh;
+  object-fit: contain;
+  width: 100%;
 }
 .abouthero {
   background-image: url("../img/aboutpage/bg.png");
@@ -411,15 +420,16 @@ model-viewer {
 .toggle-btns {
   display: flex;
   border: 1px solid #ffffff;
-  border-radius: 2rem;
+  /* background: rgb(255, 255, 255, 0.3); */
+  border-radius: 1rem;
   overflow: hidden;
   width: 98%;
 }
 
-.toggle {
+.togglebtn {
   background: #cdb2a7;
+  border-radius: 10px;
   flex: 1;
-  padding: 0.75rem 2rem;
   background: transparent;
   border: none;
   outline: none;
@@ -429,11 +439,11 @@ model-viewer {
   transition: all 0.3s ease;
 }
 
-.toggle.active {
+.togglebtn.active {
   background: linear-gradient(
     90deg,
-    rgba(255, 255, 255, 1) 43%,
-    rgba(189, 150, 135, 1) 100%
+    rgba(255, 255, 255, 1) 35%,
+    rgba(189, 150, 135, 0) 100%
   );
   color: #222;
 }
@@ -457,7 +467,7 @@ model-viewer {
   .contactinfo {
     display: none !important;
   }
-  .navmenu{
+  .navmenu {
     height: 100vh !important;
   }
   .responsive {
@@ -515,25 +525,44 @@ model-viewer {
     padding: 20px;
     border-radius: 10px;
   }
-  .d-btns {
-    border: none;
-    border-radius: 10px;
+  .service-hero {
+    height: 152vh !important;
+  }
+  .toggle-btns {
     display: flex;
     flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding: 30px 10px !important;
     width: 90%;
+    border: none !important;
   }
-  .toggle {
-    border: 3px solid white;
-    font-size: 2vw;
-    width: 90%;
-    font-weight: 600;
+  .togglebtn {
+    flex: 1 1 calc(50% - 10px);
     border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    background-color: #f8f9fa;
+    transition: all 0.2s ease-in-out;
+    padding: 10px 10px !important;
   }
-  .footerdiv2{
+  .footerdiv2 {
     text-align: start !important;
   }
-  .footerdiv3{
+  .footerdiv3 {
     text-align: end !important;
+  }
+  .contacthead {
+    text-align: center !important;
+  }
+}
+@media screen and (max-width: 750px) {
+  .footerdiv2,
+  .footerdiv3 {
+    text-align: center !important;
+    margin-top: 20px !important;
+    width: 90% !important;
   }
 }
 @media screen and (max-width: 600px) {
@@ -583,26 +612,13 @@ model-viewer {
     font-size: 1.5vw !important;
     line-height: 140% !important;
   }
-  .footerdiv1,
   .footerdiv2,
-  .footerdiv3,
-  .footerdiv4,
-  .footerdiv5,
-  .footerdiv6 {
+  .footerdiv3 {
+    text-align: center !important;
+    margin-top: 20px !important;
     width: 90% !important;
-    margin-right: auto !important;
-    margin-left: auto !important;
   }
-  .footerimg {
-    width: 25% !important;
-    margin-right: auto !important;
-    margin-left: auto !important;
-  }
-  .footerdiv2,
-  .footerdiv3,
-  .footerdiv4,
-  .footerdiv5,
-  .footerdiv6 {
-    margin-top: 40px !important;
+  .service-hero {
+    height: 152vh !important;
   }
 }
