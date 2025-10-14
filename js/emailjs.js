@@ -1,6 +1,5 @@
 function sendEmail(e) {
   e.preventDefault();
-
   const params = {
     name: document.getElementById("name").value,
     mobile: document.getElementById("mobile").value,
@@ -14,6 +13,10 @@ function sendEmail(e) {
   emailjs
     .send(serviceID, templateID, params)
     .then((response) => {
+      document.getElementById("name").value = "";
+      document.getElementById("mobile").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("message").value = "";
       console.log("SUCCESS!", response.status, response.text);
       alert("✅ Message sent successfully!");
       document.querySelector("form").reset();
