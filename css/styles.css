@@ -153,64 +153,64 @@
   background-image: url("../img/indexpage/Hero-gif.gif");
 }
 .abouthero {
-  background-image: url("../img/aboutpage/bg.png");
+  background-image: url("../img/aboutpage/bg.webp");
 }
 .servicehero {
-  background-image: url("../img/services/bg.png");
+  background-image: url("../img/services/bg.webp");
 }
 .galleryhero {
-  background-image: url("../img/gallery/gallerybg.png");
+  background-image: url("../img/gallery/gallerybg.webp");
 }
 .qualityhero {
-  background-image: url("../img/quality/bg.png");
+  background-image: url("../img/quality/bg.webp");
 }
 .labhero {
-  background-image: url("../img/labs/bg.png");
+  background-image: url("../img/labs/bg.webp");
 }
 .contacthero {
-  background-image: url("../img/contact/bg.png");
+  background-image: url("../img/contact/bg.webp");
 }
 .services {
-  background-image: url("../img/indexpage/Nickel\ Plating.png");
+  background-image: url("../img/indexpage/plating/Nickel\ Plating.webp");
 }
 .services1 {
-  background-image: url("../img/indexpage/Tin\ Plating.png");
+  background-image: url("../img/indexpage/plating/Tin\ Plating.webp");
 }
 .services2 {
-  background-image: url("../img/indexpage/Zinc\ Plating.png");
+  background-image: url("../img/indexpage/plating/Zinc\ Plating.webp");
 }
 .ourProjects {
-  background-image: url("../img/indexpage/ourProjetImg1.png");
+  background-image: url("../img/indexpage/ourproject/ourProjetImg1.webp");
 }
 .ourProjects1 {
-  background-image: url("../img/indexpage/ourProjectImg2.png");
+  background-image: url("../img/indexpage/ourproject/ourProjectImg2.webp");
 }
 .ourProjects2 {
-  background-image: url("../img/indexpage/ourProjetImg3.png");
+  background-image: url("../img/indexpage/ourproject/ourProjetImg3.webp");
 }
 .ourProjects3 {
-  background-image: url("../img/indexpage/ourProjectImg4.png");
+  background-image: url("../img/indexpage/ourproject/ourProjectImg4.webp");
 }
 .safetyimg {
-  background-image: url("../img/quality/project/prj1.png");
+  background-image: url("../img/quality/project/prj1.webp");
 }
 .humanResources {
-  background-image: url("../img/quality/project/prj2.png");
+  background-image: url("../img/quality/project/prj1.webp");
 }
 .lab-test-1 {
-  background-image: url("../img/labs/tests/test1.png");
+  background-image: url("../img/labs/tests/test1.webp");
 }
 .lab-test-2 {
-  background-image: url("../img/labs/tests/test2.png");
+  background-image: url("../img/labs/tests/test2.webp");
 }
 .lab-test-3 {
-  background-image: url("../img/labs/tests/test3.png");
+  background-image: url("../img/labs/tests/test3.webp");
 }
 .lab-test-4 {
-  background-image: url("../img/labs/tests/test4.png");
+  background-image: url("../img/labs/tests/test4.webp");
 }
 .lab-test-5 {
-  background-image: url("../img/labs/tests/test5.png");
+  background-image: url("../img/labs/tests/test5.webp");
 }
 /**********************************************Font Size*******************************************************************/
 .loremtxt {
@@ -303,7 +303,7 @@
   top: 5vw !important;
   outline: 1px solid rgb(255, 255, 255) !important;
 }
-.testting{
+.testting {
   line-height: 4vw !important;
 }
 /***************************************************About Page******************************************************************/
