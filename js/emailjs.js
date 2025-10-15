@@ -6,7 +6,7 @@ forms.forEach(function (form) {
     e.stopPropagation();
 
     if (form.checkValidity()) {
-      sendEmail(form); // pass the form element
+      sendEmail(form);
     }
 
     form.classList.add("was-validated");
@@ -28,7 +28,7 @@ function sendEmail(form) {
     .send(serviceID, templateID, params)
     .then((response) => {
       console.log("SUCCESS!", response.status, response.text);
-      alert("✅ Message sent successfully!");
+      alert("Your Message Will Be sent To Dynamic Electrocplaters Private Limited!");
       form.reset();
       form.classList.remove("was-validated");
     })
