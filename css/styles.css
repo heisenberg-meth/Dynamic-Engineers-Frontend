@@ -623,12 +623,23 @@ model-viewer {
   .abtpara {
     width: 100% !important;
   }
+  .contactbtn {
+    font-size: 2.5vw !important;
+  }
 }
 @media screen and (max-width: 750px) {
   .footerdiv2,
   .footerdiv3 {
     text-align: center !important;
     margin-top: 20px !important;
+    width: 90% !important;
+  }
+  .aboutsection {
+    flex-direction: row !important;
+    margin-bottom: 20px !important;
+  }
+  .abouttxt {
+    font-size: large;
     width: 90% !important;
   }
 }
@@ -700,5 +711,8 @@ model-viewer {
   }
   .abtimg {
     margin-bottom: 20px;
+  }
+  .contactbtn {
+    font-size: 3vw !important;
   }
 }
