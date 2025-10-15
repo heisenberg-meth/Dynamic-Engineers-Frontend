@@ -239,6 +239,12 @@
 .inputbox:focus {
   outline: none;
 }
+.phonelogo{
+  width: 10px !important;
+}
+.maillogo{
+  width: 13px !important;
+}
 /*Buttons*/
 .parent {
   display: grid;
