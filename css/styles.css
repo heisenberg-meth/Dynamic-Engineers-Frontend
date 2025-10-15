@@ -38,6 +38,9 @@
 .w-98 {
   width: 98% !important;
 }
+.w-60 {
+  width: 60% !important;
+}
 .lastlogo {
   width: 4vw !important;
 }
@@ -66,6 +69,9 @@
 .vh-60 {
   height: 60vh !important;
 }
+.vh-70 {
+  height: 70vh !important;
+}
 .vh-71 {
   height: 71vh !important;
 }
@@ -75,14 +81,12 @@
 .vh-80 {
   height: 80vh !important;
 }
-.galleryimg1 {
-  height: 100% !important;
-}
 .steelimg {
   height: 64vh !important;
 }
 /************************************************Colors******************************************************/
 .aboutBtn,
+.aboutBtn1,
 .aboutpageBtn,
 .contactbtn,
 .qualitybtn {
@@ -147,9 +151,6 @@
 }
 .heroSection {
   background-image: url("../img/indexpage/Hero-gif.gif");
-  height: 100vh;
-  object-fit: contain;
-  width: 100%;
 }
 .abouthero {
   background-image: url("../img/aboutpage/bg.png");
@@ -210,10 +211,6 @@
 }
 .lab-test-5 {
   background-image: url("../img/labs/tests/test5.png");
-}
-.galleryimg {
-  object-fit: contain;
-  height: 75vh !important;
 }
 /**********************************************Font Size*******************************************************************/
 .loremtxt {
@@ -403,43 +400,41 @@
     rgba(101, 59, 51, 0.8) 112.24%
   );
 }
+
 #loading {
-  z-index: 10;
   pointer-events: none;
   transition: opacity 0.5s ease;
 }
-.model {
-  width: 60%;
-  height: 70vh;
-}
+
 model-viewer {
-  width: 100%;
-  height: 100%;
   transition: opacity 0.5s ease;
 }
+
 .fade {
   opacity: 0.3;
 }
 
 .toggle-btns {
-  display: flex;
   border: 1px solid #ffffff;
-  border-radius: 1rem;
-  overflow: hidden;
   width: 98%;
 }
 
 .togglebtn {
-  background: #cdb2a7;
-  border-radius: 10px;
-  flex: 1;
   background: transparent;
   border: none;
   outline: none;
   font-size: 1rem;
   color: #444;
   cursor: pointer;
+  flex: 1;
+  border-radius: 10px;
   transition: all 0.3s ease;
+  padding: 0.75rem 1rem;
+}
+
+.togglebtn:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: #222;
 }
 
 .togglebtn.active {
@@ -450,15 +445,9 @@ model-viewer {
   );
   color: #222;
 }
-
-.toggle:not(.active):hover {
-  background: rgba(255, 255, 255, 0.15);
-}
-
 .abouttxt {
   font-size: 1.5vw;
 }
-
 .galleryparent {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -537,6 +526,10 @@ model-viewer {
   grid-row-start: 11;
 }
 
+.foot-logo {
+  width: 8vw !important;
+}
+
 @keyframes slide-underline {
   0% {
     width: 0;
@@ -591,14 +584,8 @@ model-viewer {
   .steelimg1 {
     margin-left: 2vw !important;
   }
-  .galleryimg {
-    height: 50vh !important;
-  }
   .zincimg {
     height: 31vh !important;
-  }
-  .galleryimgsteel {
-    height: 49vh !important;
   }
   .abouttxt {
     width: 65% !important;
@@ -611,8 +598,6 @@ model-viewer {
     border-radius: 10px;
   }
   .toggle-btns {
-    display: flex;
-    flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
     padding: 30px 10px !important;
@@ -634,6 +619,9 @@ model-viewer {
   }
   .footerdiv3 {
     text-align: end !important;
+  }
+  .abtpara {
+    width: 100% !important;
   }
 }
 @media screen and (max-width: 750px) {
@@ -677,10 +665,6 @@ model-viewer {
     margin-top: 30px !important;
     left: 0px !important;
   }
-  .galleryimgsteel,
-  .galleryimg {
-    height: 33vh !important;
-  }
   .zincimg {
     height: 20vh !important;
   }
@@ -696,5 +680,25 @@ model-viewer {
     text-align: center !important;
     margin-top: 20px !important;
     width: 90% !important;
+  }
+  .abouttxt {
+    font-size: large;
+    margin-right: auto !important;
+    margin-left: auto !important;
+    width: 100% !important;
+  }
+  .aboutBtn {
+    margin-bottom: 20px;
+    margin-right: auto !important;
+    margin-left: auto !important;
+  }
+  .foot-logo {
+    width: 15vw !important;
+  }
+  .abtpara {
+    width: 90% !important;
+  }
+  .abtimg {
+    margin-bottom: 20px;
   }
 }
