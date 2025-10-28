@@ -92,6 +92,14 @@
 .qualitybtn {
   background: linear-gradient(90deg, #74473b 0%, #a46e58 100%);
 }
+.services-cards img{
+  height: 35.25vw;
+  width: 100%;
+  object-fit: cover;
+}
+.services-cards p{
+  line-height: 25px;
+}
 /**********************************************NavBar*************************************************************************/
 .navlink.active::after {
   display: none !important;
@@ -151,6 +159,7 @@
 }
 .heroSection {
   background-image: url("../img/indexpage/Hero-gif.gif");
+  height: 100vh;
 }
 .abouthero {
   background-image: url("../img/aboutpage/bg.webp");
@@ -174,10 +183,10 @@
   background-image: url("../img/indexpage/plating/Nickel\ Plating.webp");
 }
 .services1 {
-  background-image: url("../img/indexpage/plating/Tin\ Plating.webp");
+  background-image: url("../img/services/Tin\ Plating.png");
 }
 .services2 {
-  background-image: url("../img/indexpage/plating/Zinc\ Plating.webp");
+  background-image: url("../img/services/Zinc\ Plating.jpg");
 }
 .ourProjects {
   background-image: url("../img/indexpage/ourproject/ourProjetImg1.webp");
@@ -461,7 +470,7 @@ model-viewer {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(12, 1fr);
-  gap: 8px;
+  gap: 20px;
 }
 
 .gdiv1 {
@@ -570,6 +579,9 @@ model-viewer {
     padding: 1rem 0;
     line-height: 2.5rem;
   }
+  .lastlogo {
+  width: 7vw !important;
+}
   .qualitybtn {
     padding: 10px 20px !important;
   }
@@ -635,6 +647,11 @@ model-viewer {
   .contactbtn {
     font-size: 2.5vw !important;
   }
+  .services-cards img{
+  height:70.25vw;
+  width: 100%;
+  object-fit: cover;
+}
 }
 @media screen and (max-width: 750px) {
   .footerdiv2,
@@ -651,6 +668,9 @@ model-viewer {
     font-size: large;
     width: 90% !important;
   }
+  .lastlogo {
+  width: 10vw !important;
+}
 }
 @media screen and (max-width: 600px) {
   .loremtxt {
@@ -659,6 +679,10 @@ model-viewer {
   .logo {
     width: 15vw !important;
   }
+  .heroSection {
+  background-image: url("../img/indexpage/Hero-gif.gif");
+  height: 50vh;
+}
   .navlinks {
     align-items: center !important;
     transition: 0.5s ease-in-out;
@@ -685,6 +709,9 @@ model-viewer {
     margin-top: 30px !important;
     left: 0px !important;
   }
+  .lastlogo {
+  width: 12vw !important;
+}
   .zincimg {
     height: 20vh !important;
   }
@@ -694,6 +721,11 @@ model-viewer {
   .labtext {
     font-size: 1.5vw !important;
     line-height: 140% !important;
+  }
+  .galleryparent{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
   }
   .footerdiv2,
   .footerdiv3 {
@@ -724,4 +756,9 @@ model-viewer {
   .contactbtn {
     font-size: 3vw !important;
   }
+      .services-cards img {
+        height: 84.25vw;
+        width: 100%;
+        object-fit: cover;
+    }
 }
