@@ -92,12 +92,12 @@
 .qualitybtn {
   background: linear-gradient(90deg, #74473b 0%, #a46e58 100%);
 }
-.services-cards img{
+.services-cards img {
   height: 35.25vw;
   width: 100%;
   object-fit: cover;
 }
-.services-cards p{
+.services-cards p {
   line-height: 25px;
 }
 /**********************************************NavBar*************************************************************************/
@@ -180,13 +180,13 @@
   background-image: url("../img/contact/bg.webp");
 }
 .services {
-  background-image: url("../img/indexpage/plating/Nickel\ Plating.webp");
+  background-image: url("../img/indexpage/plating/NickelPlating.webp");
 }
 .services1 {
-  background-image: url("../img/services/Tin\ Plating.png");
+  background-image: url("../img/indexpage/plating/TinPlating.webp");
 }
 .services2 {
-  background-image: url("../img/services/Zinc\ Plating.jpg");
+  background-image: url("../img/indexpage/plating/ZincPlating.webp");
 }
 .ourProjects {
   background-image: url("../img/indexpage/ourproject/ourProjetImg1.webp");
@@ -248,10 +248,10 @@
 .inputbox:focus {
   outline: none;
 }
-.phonelogo{
+.phonelogo {
   width: 10px !important;
 }
-.maillogo{
+.maillogo {
   width: 13px !important;
 }
 /*Buttons*/
@@ -580,8 +580,8 @@ model-viewer {
     line-height: 2.5rem;
   }
   .lastlogo {
-  width: 7vw !important;
-}
+    width: 7vw !important;
+  }
   .qualitybtn {
     padding: 10px 20px !important;
   }
@@ -647,11 +647,11 @@ model-viewer {
   .contactbtn {
     font-size: 2.5vw !important;
   }
-  .services-cards img{
-  height:70.25vw;
-  width: 100%;
-  object-fit: cover;
-}
+  .services-cards img {
+    height: 70.25vw;
+    width: 100%;
+    object-fit: cover;
+  }
 }
 @media screen and (max-width: 750px) {
   .footerdiv2,
@@ -669,8 +669,8 @@ model-viewer {
     width: 90% !important;
   }
   .lastlogo {
-  width: 10vw !important;
-}
+    width: 10vw !important;
+  }
 }
 @media screen and (max-width: 600px) {
   .loremtxt {
@@ -680,9 +680,9 @@ model-viewer {
     width: 15vw !important;
   }
   .heroSection {
-  background-image: url("../img/indexpage/Hero-gif.gif");
-  height: 50vh;
-}
+    background-image: url("../img/indexpage/Hero-gif.gif");
+    height: 50vh;
+  }
   .navlinks {
     align-items: center !important;
     transition: 0.5s ease-in-out;
@@ -710,8 +710,8 @@ model-viewer {
     left: 0px !important;
   }
   .lastlogo {
-  width: 12vw !important;
-}
+    width: 12vw !important;
+  }
   .zincimg {
     height: 20vh !important;
   }
@@ -722,7 +722,7 @@ model-viewer {
     font-size: 1.5vw !important;
     line-height: 140% !important;
   }
-  .galleryparent{
+  .galleryparent {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -756,9 +756,9 @@ model-viewer {
   .contactbtn {
     font-size: 3vw !important;
   }
-      .services-cards img {
-        height: 84.25vw;
-        width: 100%;
-        object-fit: cover;
-    }
+  .services-cards img {
+    height: 84.25vw;
+    width: 100%;
+    object-fit: cover;
+  }
 }
